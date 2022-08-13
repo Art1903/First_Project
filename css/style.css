@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+h1 {
+    margin: 200px 450px 0 450px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.1em;
+}
+
+h3 {
+    font-size: 36px;
+    margin: 94px 617px 0 617px;
+} 
+
+h4 {
+    color: #000000;
+    font-size: 26px;
+    float: left;
+    margin: 24px 0 24px 215px;
+}
+
+h5 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    Font-style: Medium;
+}
+
+p {
+    color: #757575;
+    font-size: 14px;
+} 
+
+header {
+    color: #FFFFFF;
+    float: left;
+    width: 1600px;
+    height: 80px;
+    font-size: 14px;
+}
+
+.web {
+    float: left;
+    height: 80px;
+}
+
+span {
+    color: #2196F3;
+    font-family: 'Raleway';
+}
+
+.navigation {
+    float: left;
+    margin: 32px 0 32px 93px;
+}
+
+.studio {
+    float: left;
+}
+
+.portfolio {
+    float: left;
+}
+
+.cont {
+    float: left;
+}
+
+.navigation a {
+    Width: 281px;
+    text-decoration: none;
+    color: #212121;
+    margin: 0 25px;
+}
+
+.navigation .cont a {
+    margin-right: 0;
+}
+
+.navigation a:hover {
+    color: #2196F3;
+}
+
+.contact {
+    float: left;
+}
+
+.contact .mail {
+    float: left;
+    padding-right: 50px;
+    text-decoration: none;
+    color: #757575;
+    margin: 32px 0 32px 344px;
+}
+
+.contact .tel {
+    float: left;
+    text-decoration: none;
+    color: #757575;
+    margin: 32px 215px 32px 0;
+}
+
+.contact a:hover {
+    color: #2196F3;
+}
+
+/* ----------Banner--------- */
+
+.main {
+    width: 1600px;
+    height: auto;
+} 
+
+.banner {
+    float: left;
+    width: 1600px;
+    height: 600px;
+    background-color: #2F303A;
+}
+
+.banner-button {
+    font-size: 16px;
+    width: 216px;
+    height: 50px;
+    background-color: #2196F3;
+    
+    margin: 30px 692px 200px 692px;
+    text-align: center;
+    border: none;
+
+}
+
+.banner-button a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.banner-button a:hover {
+    color: black;
+
+}
+
+.benefits {
+    float: left;
+}
+
+.details {
+    width: 270px;
+    float: left;
+    margin: 94px 0 0 215px;
+    line-height: 24px;
+    letter-spacing: inherit;
+}
+
+.punctuality {
+    width: 270px;
+    float: left;
+    margin: 94px 0 0 30px;
+    line-height: 24px;
+}
+
+.planning {
+    width: 270px;
+    float: left;
+    margin: 94px 0 0 30px;
+    line-height: 24px;
+}
+
+.modern {
+    width: 270px;
+    float: left;
+    margin: 94px 215px 0 30px;
+    line-height: 24px;
+}
+
+.what-we-do {
+    height: max-content;
+    float: left;
+    background-color: #FFFFFF;
+}
+
+.about {
+    float: left;
+    margin-bottom: 94px;
+}
+
+#first {
+    float: left;
+    margin: 50px 0 0 215px;
+}
+
+#first img {
+    width: 370px;
+    height: 294px;
+
+}
+
+#second {
+    float: left;
+    margin: 50px 0 0 30px;
+}
+
+#second img {
+    width: 370px;
+    height: 294px;
+}
+
+#third {
+    float: left;
+    margin: 50px 215px 0 30px;
+}
+
+#third img {
+    width: 370px;
+    height: 294px;
+}
+
+.ourteam {
+    float: left;
+    width: 1600px;
+    height: 648px;
+    background-color: #F5F4FA;
+    letter-spacing: 0.03em;
+}
+
+.team {
+    float: left;
+    margin: 50px 30px 0 0;
+    width: 270px;
+    height: 370px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.team p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+   
+}
+
+.product {
+    margin-left: 215px;
+}
+
+.ourteam img {
+    width: 270px;
+    height: 260px;
+}
+
+.team h5 {
+    margin-top: 30px;
+    color: #212121;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.frontend {
+    Font-style: 'Regular';
+}
+
+.design {
+    margin-right: 215px;
+}
+
+/* -----------footer------------ */
+
+footer {
+    float: left;
+    width: 1600px;
+    height: 252px;
+    background-color: #2F303A;;
+}
+
+footer .web {
+    width: 1600px;
+    color: #FFFFFF;
+    float: none;
+    margin-bottom: 20px;
+}
+
+footer .web h4 {
+    color: #FFFFFF;
+    margin: 60px 0 0 215px;
+}
+
+footer p {
+    width: 1600px;
+    float: left;
+    color: #FFFFFF;
+    margin: 20px 0 0 215px;
+}
+
+.contact-footer a {
+    text-decoration: none;
+    color: #757575;
+    margin-left: 215px;
+}
+
+.contact-footer .mail {
+    width: 100%;
+    float: left;
+    margin-top: 9px;
+}
+
+.contact-footer .tel {
+        float: left;
+        margin-top: 9px;
+}
+
