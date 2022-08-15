@@ -3,6 +3,12 @@
     font-family: 'Roboto';
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+
 h1 {
     margin: 200px 450px 0 450px;
     text-transform: uppercase;

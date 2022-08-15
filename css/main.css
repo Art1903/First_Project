@@ -99,13 +99,33 @@ a.cont {
     float: left;
 }
 
-.contact-header a:hover {
+.contact-header a span {
+    color: #757575;
+}
+.contact-header a:hover span {
     color: #2196F3;
 }
 
-.letter:hover {
-    background-color: #2196F3;
+.contact-header a .contact-icon-letter {
+    width: 16px;
+    height: 12px;
+    background-image: url(../images/letter.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
+.contact-header a:hover .contact-icon-letter {
+    background-image: url(../images/letter_hover.svg);
+}
+
+
+/* .contact-header a:hover {
+    color: #2196F3;
+} */
+
+/* .letter:hover {
+    background-color: #2196F3;
+} */
 
 /* ----------Banner--------- */
 
