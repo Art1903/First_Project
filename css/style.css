@@ -4,24 +4,25 @@
 }
 
 html, body {
-    height: 100%;
+    height: auto;
     width: 100%;
+    background-color: #F5F4FA;
 }
 
-
 h1 {
-    margin: 200px 450px 0 450px;
+    margin: 200px 0 0 452px;
     text-transform: uppercase;
     text-align: center;
     color: #FFFFFF;
     font-size: 44px;
     line-height: 60px;
     letter-spacing: 0.1em;
+    width: 696px;
 }
 
-h3 {
+h2 {
     font-size: 36px;
-    margin: 94px 617px 0 617px;
+    margin-top: 94px;
 } 
 
 h4 {
@@ -42,37 +43,56 @@ p {
     font-size: 14px;
 } 
 
+/* -------------Header---------- */
+
 header {
-    color: #FFFFFF;
+    width: 100%;
+    background-color: #FFFFFF;
     float: left;
     height: 80px;
     font-size: 14px;
 }
 
-.web {
+.logo {
     float: left;
     height: 80px;
 }
 
-span {
+.logo p {
+    color: #000000;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    float: left;
+    margin: 24px 0 24px 215px;
+    letter-spacing: 0.03em;
+}
+
+.logo span {
     color: #2196F3;
     font-family: 'Raleway';
 }
+
+.logo p:hover {
+    color: #2196F3;
+}
+
+/* ----------Navigation----------- */
 
 .navigation {
     float: left;
     margin: 32px 0 32px 93px;
 }
 
-.studio {
+.navigation_studio {
     float: left;
 }
 
-.portfolio {
+.navigation_portfolio {
     float: left;
 }
 
-.cont {
+.navigation_contact {
     float: left;
 }
 
@@ -83,7 +103,7 @@ span {
     margin: 0 25px;
 }
 
-.navigation .cont a {
+.navigation .contact a {
     margin-right: 0;
 }
 
@@ -91,11 +111,13 @@ span {
     color: #2196F3;
 }
 
-.contact {
+/* -----------Contact-info--------- */
+
+.contact-info {
     float: left;
 }
 
-.contact .mail {
+.contact-info_mail {
     float: left;
     padding-right: 50px;
     text-decoration: none;
@@ -103,32 +125,34 @@ span {
     margin: 32px 0 32px 344px;
 }
 
-.contact .tel {
+.contact-info_tel {
     float: left;
     text-decoration: none;
     color: #757575;
     margin: 32px 0 32px 0;
 }
 
-.contact a:hover {
+.contact-info a:hover {
     color: #2196F3;
 }
 
-/* ----------Banner--------- */
+/* --------------Main---------------- */
 
 .main {
-    width: 1600px;
-    height: auto;
+    width: 100%;
+    height: 100%;
 } 
+
+/* ------Banner----- */
 
 .banner {
     float: left;
-    width: 1600px;
+    width: 100%;
     height: 600px;
     background-color: #2F303A;
 }
 
-.banner-button {
+.banner_submit-order {
     font-size: 16px;
     width: 216px;
     height: 50px;
@@ -138,99 +162,106 @@ span {
     border: none;
 }
 
-.banner-button a {
+.banner_submit-order a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.banner-button a:hover {
+.banner_submit-order a:hover {
     color: black;
 }
 
-.details {
-    width: 270px;
-    float: left;
-    margin: 94px 0 0 215px;
-    line-height: 24px;
-    letter-spacing: inherit;
-}
+/* -----------about us-------------- */
 
-.punctuality {
-    width: 270px;
+.about-us {
     float: left;
-    margin: 94px 0 0 30px;
-    line-height: 24px;
-}
-
-.planning {
-    width: 270px;
-    float: left;
-    margin: 94px 30px 0 30px;
-    line-height: 24px;
-}
-
-.modern {
-    width: 270px;
-    float: left;
-    margin-top: 94px;
-    line-height: 24px;
-}
-
-.what-we-do {
-    float: left;
+    width: 100%;
     background-color: #FFFFFF;
 }
 
-.about {
+/* -----------about us benefit-------------- */
+
+.about-us_benefit {
+    margin: 94px 0 0 215px;
     float: left;
-    margin-bottom: 94px;
+    width: 100%;
+    height: auto;
 }
 
-#first {
-    float: left;
-    margin: 50px 0 0 215px;
+.about-us_benefit-item-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #212121;
+    Font-style: Medium;
 }
 
-#first img {
+.about-us_benefit-item {
+    width: 270px;
+    float: left;
+    margin-right: 30px;
+    line-height: 24px;
+}
+
+/* -----------about us details------------ */
+
+.about-us_details {
+    height: auto;
+    width: 100%;
+    float: left;
+    margin: 0 0 94px 215px;
+} 
+
+.about-us_details h2 {
+    margin-left: 617px;
+}
+
+.about-us_details h2 {
+    margin-left: 402px;
+}
+
+.about-us_details-item {
+    float: left;
+    margin: 50px 30px 0 0;
+    height: 294px;
+}
+
+.about-us_details-item img {
     width: 370px;
     height: 294px;
 }
 
-#second {
+/* ----------team----------- */
+
+.team {
+    margin: 0 0 94px 215px;
     float: left;
-    margin: 50px 30px 0 30px;
-}
-
-#second img {
-    width: 370px;
-    height: 294px;
-}
-
-#third {
-    float: left;
-    margin-top: 50px;
-}
-
-#third img {
-    width: 370px;
-    height: 294px;
-}
-
-.ourteam {
-    float: left;
-    width: 1600px;
-    height: 648px;
+    width: 100%;
+    height: auto;
     background-color: #F5F4FA;
     letter-spacing: 0.03em;
 }
 
-.team {
+.team h2 {
+    margin-left: 453px;
+}
+
+.team_item {
     float: left;
     margin: 50px 30px 0 0;
     width: 270px;
     height: 370px;
     background-color: #FFFFFF;
     text-align: center;
+}
+
+.team_item-leader {
+    font-weight: 500;
+    margin-top: 30px;
+    color: #212121;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
 }
 
 .team p {
@@ -240,24 +271,9 @@ span {
     text-align: center;
 }
 
-.product {
-    margin-left: 215px;
-}
-
-.ourteam img {
+.team_item img {
     width: 270px;
     height: 260px;
-}
-
-.team h5 {
-    margin-top: 30px;
-    color: #212121;
-    font-size: 16px;
-    line-height: 19px;
-}
-
-.frontend {
-    Font-style: 'Regular';
 }
 
 /* -----------footer------------ */
@@ -269,37 +285,54 @@ footer {
     background-color: #2F303A;;
 }
 
-footer .web {
-    color: #FFFFFF;
-    float: none;
-    margin-bottom: 20px;
+footer .logo {
+    width: 100%;
+    height: auto;
 }
 
-footer .web h4 {
+footer .logo p {
+    float: left;
     color: #FFFFFF;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
     margin: 60px 0 0 215px;
+    letter-spacing: 0.03em;
+    height: 31px;
 }
 
 footer p {
+    font-family: 'Roboto';
     float: left;
     color: #FFFFFF;
-    margin: 20px 0 0 215px;
+    font-size: 14px;
+    margin-left: 215px;
+    margin-top: 20px;
 }
 
-.contact-footer a {
+.footer_contact-info {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.footer_contact-info a {
     text-decoration: none;
     color: #757575;
     margin-left: 215px;
 }
 
-.contact-footer .mail {
+footer .contact-info_mail {
     width: 100%;
     float: left;
-    margin-top: 9px;
+    margin: 9px 0 0 0;
 }
 
-.contact-footer .tel {
+footer .contact-info_tel {
         float: left;
-        margin-top: 9px;
+        margin: 9px 0 0 0;
 }
 
+.footer_contact-info a:hover {
+    color: #2196F3;
+}
