@@ -25,25 +25,14 @@ h2 {
     margin-top: 94px;
 } 
 
-h4 {
-    color: #000000;
-    font-size: 26px;
-    float: left;
-    margin: 24px 0 24px 215px;
-}
-
-h5 {
-    margin-bottom: 10px;
-    font-size: 14px;
-    Font-style: Medium;
-}
-
 p {
     color: #757575;
     font-size: 14px;
 } 
 
 /* -------------Header---------- */
+
+/* --------Logo---------- */
 
 header {
     width: 100%;

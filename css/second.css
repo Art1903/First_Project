@@ -3,32 +3,10 @@
     font-family: 'Roboto';
 }
 
-h1 {
-    margin: 200px 450px 0 450px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 44px;
-    line-height: 60px;
-    letter-spacing: 0.1em;
-}
-
-h3 {
-    font-size: 36px;
-    margin: 94px 0 0 617px;
-}
-
-h4 {
-    color: #000000;
-    font-size: 26px;
-    float: left;
-    margin: 24px 0 24px 215px;
-}
-
-h5 {
-    margin-bottom: 10px;
-    font-size: 14px;
-    Font-style: Medium;
+html, body {
+    height: auto;
+    width: 100%;
+    background-color: #FFFFFF;
 }
 
 p {
@@ -36,39 +14,69 @@ p {
     font-size: 14px;
 }
 
-/* ------------Header--------- */
+/* -------------Header---------- */
+
+/* --------Logo---------- */
 
 header {
-    color: #FFFFFF;
+    width: 100%;
+    background-color: #FFFFFF;
     float: left;
     height: 80px;
     font-size: 14px;
 }
 
-.web {
+.logo {
     float: left;
     height: 80px;
 }
 
-span {
+.logo p {
+    color: #000000;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    float: left;
+    margin: 24px 0 24px 215px;
+    letter-spacing: 0.03em;
+}
+
+.logo span {
     color: #2196F3;
     font-family: 'Raleway';
 }
 
-.navigation {
-    float: left;
-    margin: 32px 0 0 93px;
+a .logo-active:hover {
+    color: brown;
 }
 
+/* ----------Navigation----------- */
+
+.navigation {
+    float: left;
+    margin: 32px 0 32px 93px;
+}
+
+.navigation_studio {
+    float: left;
+}
+
+.navigation_portfolio {
+    float: left;
+}
+
+.navigation_contact {
+    float: left;
+}
 
 .navigation a {
     Width: 281px;
     text-decoration: none;
     color: #212121;
-    margin-right: 50px;
+    margin: 0 25px;
 }
 
-a.cont {
+.navigation .contact a {
     margin-right: 0;
 }
 
@@ -76,55 +84,59 @@ a.cont {
     color: #2196F3;
 }
 
-.mail img {
-    margin-right: 10px;
-}
+/* -----------Contact-info--------- */
 
-.contact-header {
-    margin-left: 344px;
+.contact-info {
     float: left;
 }
 
-.contact-header a {
+.contact-info_mail {
     float: left;
-    padding-right: 30px;
-    color: #757575;
-    margin-top: 32px;
+    padding-right: 50px;
     text-decoration: none;
+    color: #757575;
+    margin: 32px 0 32px 344px;
 }
 
-.contact-header a .letter {
-    margin-right: 10px;
+.contact-info_tel {
     float: left;
+    text-decoration: none;
+    color: #757575;
+    margin: 32px 0 32px 0;
 }
 
-.contact-header a:hover {
+.contact-info a:hover {
     color: #2196F3;
 }
 
-.letter:hover {
-    background-color: #2196F3;
+/* --------------main---------------- */
+
+.main {
+    width: 100%;
+    height: 100%;
 }
 
-/* --------------Catalog------------ */
-
-/* ----------Filters---------- */
+/* --------------catalog------------ */
 
 .catalog {
+    margin: 0 215px 94px 215px;
     float: left;
     width: 100%;
+    height: auto;
     background-color: #FFFFFF;
     letter-spacing: 0.03em;
-    margin-bottom: 94px;
 }
 
-.filters {
+/* ------catalog-filters------ */
+
+.catalog-filters {
     float: left;
+    width: 100%;
     font-size: 16px;
-    margin: 94px 0 0 512px;
+    margin: 94px 0 0 297px;
 }
 
-.filters a {
+.catalog-filters a {
     text-decoration: none;
     padding: 10px 22px;
     margin-right: 8px;
@@ -132,12 +144,14 @@ a.cont {
     color: #212121;
 }
 
-.filters a:hover {
+.catalog-filters a:hover {
     color: #FFFFFF;
     background-color: #2196F3;
 }
 
-.line {
+/* ------catalog-item------ */
+
+.catalog-item {
     float: left;
     margin: 50px 30px 0 0;
     width: 370px;
@@ -146,33 +160,27 @@ a.cont {
     border: 1px solid #EEEEEE;
 }
 
-.line p {
-    float: left;
+.catalog-item p {
     font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
-    margin: 0 0 20px 24px;
+    line-height: 19px;
+    width: 322px;
+    margin-left: 24px;
 }
 
-.first {
-    margin-left: 215px;
-}
-
-.line img {
-    width: 370px;
-    height: 294px;
-}
-
-.line h5 {
-    margin: 30px 0 4px 24px;
+.catalog-item-title {
+    font-weight: 700;
+    margin-top: 30px;
     color: #212121;
     font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.06em;
+    margin: 20px 0 0 24px;
+    height: 36px;
 }
 
-.frontend {
-    Font-style: 'Regular';
+.catalog-item img {
+    width: 370px;
+    height: 294px;
+    margin-bottom: 0;
 }
 
 /* -----------footer------------ */
@@ -182,38 +190,57 @@ footer {
     width: 100%;
     height: 252px;
     background-color: #2F303A;
+    ;
 }
 
-footer .web {
-    color: #FFFFFF;
-    float: none;
-    margin-bottom: 20px;
+footer .logo {
+    width: 100%;
+    height: auto;
 }
 
-footer .web h4 {
+footer .logo p {
+    float: left;
     color: #FFFFFF;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
     margin: 60px 0 0 215px;
+    letter-spacing: 0.03em;
+    height: 31px;
 }
 
 footer p {
+    font-family: 'Roboto';
     float: left;
     color: #FFFFFF;
-    margin: 20px 0 0 215px;
+    font-size: 14px;
+    margin-left: 215px;
+    margin-top: 20px;
 }
 
-.contact-footer a {
+.footer_contact-info {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.footer_contact-info a {
     text-decoration: none;
     color: #757575;
     margin-left: 215px;
 }
 
-.contact-footer .mail {
+footer .contact-info_mail {
     width: 100%;
     float: left;
-    margin-top: 9px;
+    margin: 9px 0 0 0;
 }
 
-.contact-footer .tel {
+footer .contact-info_tel {
     float: left;
-    margin-top: 9px;
+    margin: 9px 0 0 0;
+}
+
+.footer_contact-info a:hover {
+    color: #2196F3;
 }
