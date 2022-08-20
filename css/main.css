@@ -81,12 +81,12 @@ a.cont {
     margin-right: 10px;
 }
 
-.contact-header {
+.contact-info {
     margin-left: 318px;
     float: left;
 }
 
-.contact-header a {
+.contact-info a {
     float: left;
     padding-right: 30px;
     color: #757575;
@@ -94,15 +94,15 @@ a.cont {
     text-decoration: none;
 }
 
-.contact-header a .letter {
+.contact-info a .letter {
     margin-right: 10px;
     float: left;
 }
 
-.contact-header a span {
+.contact-info a span {
     color: #757575;
 }
-.contact-header a:hover span {
+.contact-info a:hover span {
     color: #2196F3;
 }
 
@@ -117,15 +117,6 @@ a.cont {
 .contact-header a:hover .contact-icon-letter {
     background-image: url(../images/letter_hover.svg);
 }
-
-
-/* .contact-header a:hover {
-    color: #2196F3;
-} */
-
-/* .letter:hover {
-    background-color: #2196F3;
-} */
 
 /* ----------Banner--------- */
 

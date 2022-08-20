@@ -92,7 +92,11 @@ header {
     margin: 0 25px;
 }
 
-.navigation .contact a {
+.navigation_studio a {
+    margin-left: 0;
+}
+
+.navigation_contact a {
     margin-right: 0;
 }
 
@@ -102,27 +106,55 @@ header {
 
 /* -----------Contact-info--------- */
 
-.contact-info {
+.contact_info {
     float: left;
+    margin: 32px 0 0 318px;
 }
 
-.contact-info_mail {
-    float: left;
-    padding-right: 50px;
-    text-decoration: none;
-    color: #757575;
-    margin: 32px 0 32px 344px;
-}
-
-.contact-info_tel {
+.contact_info a {
     float: left;
     text-decoration: none;
     color: #757575;
-    margin: 32px 0 32px 0;
+    margin-right: 30px;
 }
 
-.contact-info a:hover {
+.contact-icon-letter {
+    float: left;
+    padding-right: 10px;
+}
+
+
+.contact-icon-tel {
+    float: left;
+    padding-right: 10px;
+}
+
+.contact_info a:hover {
     color: #2196F3;
+}
+
+.contact_info a .contact-icon-letter {
+    width: 16px;
+    height: 12px;
+    background-image: url(../images/letter.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contact_info a:hover .contact-icon-letter {
+    background-image: url(../images/letter_hover.svg);
+}
+
+.contact_info a .contact-icon-tel {
+    width: 10px;
+    height: 16px;
+    background-image: url(../images/smartphone.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contact_info a:hover .contact-icon-tel {
+    background-image: url(../images/smartphone_hover.svg);
 }
 
 /* --------------Main---------------- */
@@ -138,7 +170,7 @@ header {
     float: left;
     width: 100%;
     height: 600px;
-    background-color: #2F303A;
+    background-image: url(../images/banner.svg);
 }
 
 .banner_submit-order {
@@ -180,7 +212,7 @@ header {
 .about-us_benefit-item-title {
     font-size: 14px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin: 30px 0 10px 0;
     color: #212121;
     Font-style: Medium;
 }
@@ -192,6 +224,52 @@ header {
     line-height: 24px;
 }
 
+.about-us_benefit-feature {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+}
+
+.about-us_benefit-feature a .about-us_benefit-feature-image-satellite {
+    float: left;
+    margin: 25px 100px;
+    width: 67px;
+    height: 70px;
+    background-image: url(../images/satellite\ dish.svg);
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.about-us_benefit-feature a .about-us_benefit-feature-image-watch {
+    float: left;
+    margin: 25px 100px;
+    width: 65.32px;
+    height: 70px;
+    background-image: url(../images/watch.svg);
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.about-us_benefit-feature a .about-us_benefit-feature-image-diagram {
+    float: left;
+    margin: 25px 100px;
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/diagram.svg);
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.about-us_benefit-feature a .about-us_benefit-feature-image-astronaut {
+    float: left;
+    margin: 25px 100px;
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/astronaut.svg);
+    background-size: contain;
+    background-repeat: repeat;
+}
+
 /* -----------about us details------------ */
 
 .about-us_details {
@@ -200,10 +278,6 @@ header {
     float: left;
     margin: 0 0 94px 215px;
 } 
-
-.about-us_details h2 {
-    margin-left: 617px;
-}
 
 .about-us_details h2 {
     margin-left: 402px;
@@ -239,7 +313,7 @@ header {
     float: left;
     margin: 50px 30px 0 0;
     width: 270px;
-    height: 370px;
+    height: 428px;
     background-color: #FFFFFF;
     text-align: center;
 }
@@ -265,6 +339,221 @@ header {
     height: 260px;
 }
 
+.team_item-social-link {
+    float: left;
+    margin-top: 16px;
+    width: 270px;
+    padding-left: 32px;
+}
+
+.team_item-social-link a .team_item-social-link-instagram {
+    float: left;
+    /* margin-left: 44px ;*/
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/instagram.svg);
+    background-repeat: repeat;
+}
+
+.team_item-social-link a:hover .team_item-social-link-instagram-hover {
+    margin: -10px;
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/instagram_hover.svg);
+    background-color: #2196F3;
+    background-size: contain;
+    background-repeat: repeat;
+    border-radius: 44px;
+}
+
+.team_item-social-link a .team_item-social-link-twitter {
+    float: left;
+    margin-left: 37px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/twitter.svg);
+    background-repeat: repeat;
+}
+
+.team_item-social-link a:hover .team_item-social-link-twitter-hover {
+    margin: -10px;
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/twitter_hover.svg);
+    background-color: #2196F3;
+    background-size: contain;
+    background-repeat: repeat;
+    border-radius: 44px;
+}
+
+.team_item-social-link a .team_item-social-link-facebook {
+    float: left;
+    margin-left: 37px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/facebook.svg);
+    background-repeat: repeat;
+}
+
+.team_item-social-link a:hover .team_item-social-link-facebook-hover {
+    margin: -10px;
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/facebook_hover.svg);
+    background-color: #2196F3;
+    background-size: contain;
+    background-repeat: repeat;
+    border-radius: 44px;
+}
+
+.team_item-social-link a .team_item-social-link-linkedin {
+    float: left;
+    margin-left: 37px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/linkedin.svg);
+    background-repeat: repeat;
+}
+
+.team_item-social-link a:hover .team_item-social-link-linkedin-hover {
+    margin: -10px;
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/linkedin_hover.svg);
+    background-color: #2196F3;
+    background-size: contain;
+    background-repeat: repeat;
+    border-radius: 44px;
+}
+
+/* ----------client_details------------ */
+
+.clients_details {
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+}
+
+.clients_details h2 {
+    margin-left: 653px;
+}
+
+.clients_details-company {
+    margin: 50px 0 0 215px;
+}
+
+.clients_details-company-logo {
+    margin-right: 30px;
+    float: left;
+    width: 168px;
+    height: 90px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    margin-bottom: 94px;
+}
+
+.clients_details-company-logo:hover {
+    border: 1px solid #2196F3;
+}
+
+.clients_details-company a .clients_details-company-logo-YA_CO {
+    margin: 16px 32px;
+    width: 106px;
+    height: 60px;
+    background-image: url(../images/YA\ &\ CO.svg);
+    background-repeat: repeat;
+}
+
+.clients_details-company a:hover .clients_details-company-logo-YA_CO-hover {
+    width: 106px;
+    height: 60px;
+    background-image: url(../images/YA\ &\ CO_hover.svg);
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.clients_details-company a .clients_details-company-logo-tagline {
+    margin: 16px 32px;
+    width: 106px;
+    height: 60px;
+    background-image: url(../images/tagline.svg);
+    background-repeat: repeat;
+}
+
+.clients_details-company a:hover .clients_details-company-logo-tagline-hover {
+    width: 106px;
+    height: 60px;
+    background-image: url(../images/tagline_hover.svg);
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.clients_details-company a .clients_details-company-logo-third {
+    margin: 16px 32px;
+    width: 106px;
+    height: 60px;
+    background-image: url(../images/company.svg);
+    background-repeat: repeat;
+}
+
+.clients_details-company a:hover .clients_details-company-logo-third-hover {
+    width: 106px;
+    height: 60px;
+    background-image: url(../images/company_hover.svg);
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.clients_details-company a .clients_details-company-logo-foster {
+    margin: 16px 32px;
+    width: 106px;
+    height: 60px;
+    background-image: url(../images/FOSTER\ PETERS.svg);
+    background-repeat: repeat;
+}
+
+.clients_details-company a:hover .clients_details-company-logo-foster-hover {
+    width: 106px;
+    height: 60px;
+    background-image: url(../images/FOSTER\ PETERS_hover.svg);
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.clients_details-company a .clients_details-company-logo-brand {
+    margin: 16px 32px;
+    width: 106px;
+    height: 60px;
+    background-image: url(../images/brand.svg);
+    background-repeat: repeat;
+}
+
+.clients_details-company a:hover .clients_details-company-logo-brand-hover {
+    width: 106px;
+    height: 60px;
+    background-image: url(../images/brand_hover.svg);
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.clients_details-company a .clients_details-company-logo-six {
+    margin: 16px 32px;
+    width: 106px;
+    height: 60px;
+    background-image: url(../images/cube.svg);
+    background-repeat: repeat;
+}
+
+.clients_details-company a:hover .clients_details-company-logo-six-hover {
+    width: 106px;
+    height: 60px;
+    background-image: url(../images/cube_hover.svg);
+    background-size: contain;
+    background-repeat: repeat;
+}
+
 /* -----------footer------------ */
 
 footer {
@@ -272,6 +561,15 @@ footer {
     width: 100%;
     height: 252px;
     background-color: #2F303A;;
+}
+
+/* -----footer_main-info-------- */
+
+.footer_main-info {
+    float: left;
+    width: 231px;
+    height: 252px;
+    margin-left: 215px;
 }
 
 footer .logo {
@@ -285,7 +583,7 @@ footer .logo p {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    margin: 60px 0 0 215px;
+    margin: 60px 0 0 0;
     letter-spacing: 0.03em;
     height: 31px;
 }
@@ -295,7 +593,6 @@ footer p {
     float: left;
     color: #FFFFFF;
     font-size: 14px;
-    margin-left: 215px;
     margin-top: 20px;
 }
 
@@ -308,7 +605,6 @@ footer p {
 .footer_contact-info a {
     text-decoration: none;
     color: #757575;
-    margin-left: 215px;
 }
 
 footer .contact-info_mail {
@@ -324,4 +620,21 @@ footer .contact-info_tel {
 
 .footer_contact-info a:hover {
     color: #2196F3;
+}
+
+/* ------------footer-social-link--------- */
+
+.footer-social-link {
+    float: left;
+    height: 80px;
+    width: 250px;
+    margin-top: 72px;
+}
+
+.footer-social-link p {
+     margin-left: 32px;
+}
+
+.footer .team_item-social-link {
+    padding: 0;
 }
