@@ -6,23 +6,24 @@
 html, body {
     height: auto;
     width: 100%;
-    background-color: #F5F4FA;
+    background-color: #ffffff;
 }
 
 h1 {
-    margin: 200px 0 0 452px;
+    margin: 0 auto;
     text-transform: uppercase;
     text-align: center;
     color: #FFFFFF;
     font-size: 44px;
     line-height: 60px;
     letter-spacing: 0.1em;
-    width: 696px;
+    width: 43.5%;
+    padding: 200px 0 30px 0;
 }
 
 h2 {
     font-size: 36px;
-    margin-top: 94px;
+    padding-top: 94px;
 } 
 
 p {
@@ -37,14 +38,13 @@ p {
 header {
     width: 100%;
     background-color: #FFFFFF;
-    float: left;
     height: 80px;
     font-size: 14px;
 }
 
 .logo {
     float: left;
-    height: 80px;
+    width: 22.5%;
 }
 
 .logo p {
@@ -52,9 +52,10 @@ header {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    float: left;
-    margin: 24px 0 24px 215px;
+    float: right;
+    margin: 0 auto;
     letter-spacing: 0.03em;
+    padding-top: 24px;
 }
 
 .logo span {
@@ -70,19 +71,11 @@ header {
 
 .navigation {
     float: left;
-    margin: 32px 0 32px 93px;
+    padding-top: 16px;
 }
 
-.navigation_studio {
-    float: left;
-}
-
-.navigation_portfolio {
-    float: left;
-}
-
-.navigation_contact {
-    float: left;
+.navigation:first-child {
+    margin-left: 93px;
 }
 
 .navigation a {
@@ -90,14 +83,6 @@ header {
     text-decoration: none;
     color: #212121;
     margin: 0 25px;
-}
-
-.navigation_studio a {
-    margin-left: 0;
-}
-
-.navigation_contact a {
-    margin-right: 0;
 }
 
 .navigation a:hover {
@@ -163,54 +148,58 @@ header {
 
 /* --------------Main---------------- */
 
-.main {
+main {
     width: 100%;
-    height: 100%;
+    height: 2596px;
+    background-color: #FFFFFF;
 } 
 
 /* ------Banner----- */
 
 .banner {
-    float: left;
-    width: 100%;
     height: 600px;
     background-image: url(../images/banner.svg);
 }
 
 .banner_submit-order {
     font-size: 16px;
-    width: 216px;
     height: 50px;
-    background-color: #2196F3;
-    margin: 30px 692px 0 692px;
+    width: 13.5%;
+    margin: 0 auto;
     text-align: center;
-    border: none;
+    background-color: #2196F3;
+    text-decoration: none;
+    margin-bottom: 200px;
 }
 
 .banner_submit-order a {
     text-decoration: none;
+}
+
+.banner_submit-order p {
+    padding: 17px;
     color: #FFFFFF;
 }
 
-.banner_submit-order a:hover {
+.banner_submit-order p:hover {
     color: black;
 }
 
 /* -----------about us-------------- */
 
 .about-us {
-    float: left;
-    width: 100%;
+    /* width: 73.125%; */
     background-color: #FFFFFF;
+    height: 916px;
 }
 
 /* -----------about us benefit-------------- */
 
 .about-us_benefit {
-    margin: 94px 0 0 215px;
-    float: left;
-    width: 100%;
-    height: auto;
+    margin: 0 auto;
+    width: 73.125%;
+    padding-top: 94px;
+    height: 248px;
 }
 
 .about-us_benefit-item-title {
@@ -226,6 +215,15 @@ header {
     float: left;
     margin-right: 30px;
     line-height: 24px;
+}
+
+.about-us-details.title {
+    width: 22.875%;
+    margin: 0 auto;
+}
+
+.about-us_benefit-item:last-child {
+    margin-right: 0;
 }
 
 .about-us_benefit-feature {
@@ -277,21 +275,28 @@ header {
 /* -----------about us details------------ */
 
 .about-us_details {
-    height: auto;
-    width: 100%;
-    float: left;
-    margin: 0 0 94px 215px;
+    height: 386px;
+    width: 73.125%;
+    margin: 0 auto;
 } 
-
-.about-us_details h2 {
-    margin-left: 402px;
-}
 
 .about-us_details-item {
     float: left;
     margin: 50px 30px 0 0;
-    height: 294px;
+    /* padding-bottom: 94px; */
+    background-color: #FFFFFF;
 }
+
+h2 {
+    padding-top: 94px;
+    height: 42px;
+    
+}
+
+.about-us_details-item:last-child {
+    margin-right: 0;
+}
+
 
 .about-us_details-item img {
     width: 370px;
@@ -301,28 +306,40 @@ header {
 /* ----------team----------- */
 
 .team {
-    margin: 0 0 94px 215px;
-    float: left;
-    width: 100%;
-    height: auto;
+    height: 708px;
+    margin: 0 auto;
     background-color: #F5F4FA;
     letter-spacing: 0.03em;
 }
 
-.team h2 {
-    margin-left: 453px;
+.team.title {
+    padding-top: 94px;
+    width: 16.6%;
+    height: 42px;
+    margin: 0 auto;
+    padding-bottom: 50px;
 }
 
-.team_item {
+.team-item {
+    width: 73.125%;
+    height: 428px;
+    margin: 0 auto;
+    margin-bottom: 94px;
+}
+
+.team-item-member {
     float: left;
-    margin: 50px 30px 0 0;
+    margin-right: 30px;
     width: 270px;
     height: 428px;
     background-color: #FFFFFF;
-    text-align: center;
 }
 
-.team_item-leader {
+.team-item-member:last-child {
+    margin-right: 0;
+}
+
+.team-item-leader {
     font-weight: 500;
     margin-top: 30px;
     color: #212121;
@@ -338,7 +355,7 @@ header {
     text-align: center;
 }
 
-.team_item img {
+.team-item img {
     width: 270px;
     height: 260px;
 }
@@ -403,130 +420,94 @@ header {
 
 /* ----------client_details------------ */
 
-.clients_details {
-    float: left;
-    width: 100%;
+.clients_details.title {
+    margin: 0 auto;
+    width: 25.4%;
+    margin-bottom: 50px;
     height: auto;
-    background-color: #FFFFFF;
 }
 
-.clients_details h2 {
-    margin-left: 653px;
+.clients_details {
+    width: 73.122%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    height: 372px;
 }
 
 .clients_details-company {
-    margin: 50px 0 0 215px;
+    height: 92px;
 }
 
-.clients_details-company-logo {
-    margin-right: 30px;
+.clients_details-company-image {
     float: left;
     width: 168px;
     height: 90px;
-    background-color: #FFFFFF;
+    cursor: pointer;
     border-radius: 4px;
-    border: 1px solid #AFB1B8;
-    margin-bottom: 94px;
+     border: 1px solid #AFB1B8;
+    margin-right: 30px;
 }
 
-.clients_details-company-logo:hover {
+.clients_details-company-image:last-child {
+    margin-right: 0;
+}
+
+.clients_details-company-image:hover {
     border: 1px solid #2196F3;
 }
 
-.clients_details-company a .clients_details-company-logo-YA_CO {
-    margin: 16px 32px;
+.clients_details-company-image .logo {
     width: 106px;
     height: 60px;
+    margin: 16px 32px;
+}
+
+.clients_details-company-image .logo.YA_CO {
     background-image: url(../images/YA\ &\ CO.svg);
-    background-repeat: repeat;
 }
 
-.clients_details-company a:hover .clients_details-company-logo-YA_CO-hover {
-    width: 106px;
-    height: 60px;
+.clients_details-company-image:hover .logo.YA_CO {
     background-image: url(../images/YA\ &\ CO_hover.svg);
-    background-size: contain;
-    background-repeat: repeat;
 }
 
-.clients_details-company a .clients_details-company-logo-tagline {
-    margin: 16px 32px;
-    width: 106px;
-    height: 60px;
+.clients_details-company-image .logo.tagline {
     background-image: url(../images/tagline.svg);
-    background-repeat: repeat;
 }
 
-.clients_details-company a:hover .clients_details-company-logo-tagline-hover {
-    width: 106px;
-    height: 60px;
+.clients_details-company-image:hover .logo.tagline {
     background-image: url(../images/tagline_hover.svg);
-    background-size: contain;
-    background-repeat: repeat;
 }
 
-.clients_details-company a .clients_details-company-logo-third {
-    margin: 16px 32px;
-    width: 106px;
-    height: 60px;
+.clients_details-company-image .logo.third {
     background-image: url(../images/company.svg);
-    background-repeat: repeat;
 }
 
-.clients_details-company a:hover .clients_details-company-logo-third-hover {
-    width: 106px;
-    height: 60px;
+.clients_details-company-image:hover .logo.third {
     background-image: url(../images/company_hover.svg);
-    background-size: contain;
-    background-repeat: repeat;
 }
 
-.clients_details-company a .clients_details-company-logo-foster {
-    margin: 16px 32px;
-    width: 106px;
-    height: 60px;
+.clients_details-company-image .logo.foster {
     background-image: url(../images/FOSTER\ PETERS.svg);
-    background-repeat: repeat;
 }
 
-.clients_details-company a:hover .clients_details-company-logo-foster-hover {
-    width: 106px;
-    height: 60px;
+.clients_details-company-image:hover .logo.foster {
     background-image: url(../images/FOSTER\ PETERS_hover.svg);
-    background-size: contain;
-    background-repeat: repeat;
 }
 
-.clients_details-company a .clients_details-company-logo-brand {
-    margin: 16px 32px;
-    width: 106px;
-    height: 60px;
+.clients_details-company-image .logo.brand {
     background-image: url(../images/brand.svg);
-    background-repeat: repeat;
 }
 
-.clients_details-company a:hover .clients_details-company-logo-brand-hover {
-    width: 106px;
-    height: 60px;
+.clients_details-company-image:hover .logo.brand {
     background-image: url(../images/brand_hover.svg);
-    background-size: contain;
-    background-repeat: repeat;
 }
 
-.clients_details-company a .clients_details-company-logo-six {
-    margin: 16px 32px;
-    width: 106px;
-    height: 60px;
+.clients_details-company-image .logo.cube {
     background-image: url(../images/cube.svg);
-    background-repeat: repeat;
 }
 
-.clients_details-company a:hover .clients_details-company-logo-six-hover {
-    width: 106px;
-    height: 60px;
+.clients_details-company-image:hover .logo.cube {
     background-image: url(../images/cube_hover.svg);
-    background-size: contain;
-    background-repeat: repeat;
 }
 
 /* -----------footer------------ */
@@ -550,6 +531,10 @@ footer {
 footer .logo {
     width: 100%;
     height: auto;
+}
+
+.footer_main-info .logo p {
+    padding: 0;
 }
 
 footer .logo p {
