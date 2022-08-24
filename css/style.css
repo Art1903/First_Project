@@ -107,15 +107,16 @@ header {
 /* -----------Contact-info--------- */
 
 .contact_info {
-    float: left;
-    margin: 32px 0 0 318px;
+    float: right;
+    margin: 0 auto;
+    padding: 32px 0;
+    width: 34%;
 }
 
 .contact_info a {
     float: left;
     text-decoration: none;
     color: #757575;
-    margin-right: 30px;
 }
 
 .contact-icon-letter {
@@ -123,6 +124,9 @@ header {
     padding-right: 10px;
 }
 
+.contact_info a:first-child {
+    margin-right: 30px;
+}
 
 .contact-icon-tel {
     float: left;
@@ -339,91 +343,62 @@ header {
     height: 260px;
 }
 
-.team_item-social-link {
-    float: left;
-    margin-top: 16px;
-    width: 270px;
-    padding-left: 32px;
+/* ------------social-link------------ */
+
+.social-link {
+    margin: 16px 44px;
+    height: 44px;
 }
 
-.team_item-social-link a .team_item-social-link-instagram {
+.social-wrapper {
     float: left;
-    /* margin-left: 44px ;*/
+    width: 44px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding-top: 12px;
+}
+
+.social-wrapper:hover {
+    background-color: #2196F3;
+}
+
+.social-wrapper .icon {
     width: 20px;
     height: 20px;
-    background-image: url(../images/instagram.svg);
-    background-repeat: repeat;
+    margin: 0 auto;
 }
 
-.team_item-social-link a:hover .team_item-social-link-instagram-hover {
-    margin: -10px;
-    width: 44px;
-    height: 44px;
-    background-image: url(../images/instagram_hover.svg);
-    background-color: #2196F3;
-    background-size: contain;
-    background-repeat: repeat;
-    border-radius: 44px;
+.social-wrapper .icon.instagram {
+    background-image: url(../images/icons/instagram.svg);
 }
 
-.team_item-social-link a .team_item-social-link-twitter {
-    float: left;
-    margin-left: 37px;
-    width: 20px;
-    height: 20px;
-    background-image: url(../images/twitter.svg);
-    background-repeat: repeat;
+.social-wrapper:hover .icon.instagram {
+    background-image: url(../images/icons/instagram_hover.svg);
 }
 
-.team_item-social-link a:hover .team_item-social-link-twitter-hover {
-    margin: -10px;
-    width: 44px;
-    height: 44px;
-    background-image: url(../images/twitter_hover.svg);
-    background-color: #2196F3;
-    background-size: contain;
-    background-repeat: repeat;
-    border-radius: 44px;
+.social-wrapper .icon.twitter {
+    background-image: url(../images/icons/twitter.svg);
 }
 
-.team_item-social-link a .team_item-social-link-facebook {
-    float: left;
-    margin-left: 37px;
-    width: 20px;
-    height: 20px;
-    background-image: url(../images/facebook.svg);
-    background-repeat: repeat;
+.social-wrapper:hover .icon.twitter {
+    background-image: url(../images/icons/twitter_hover.svg);
 }
 
-.team_item-social-link a:hover .team_item-social-link-facebook-hover {
-    margin: -10px;
-    width: 44px;
-    height: 44px;
-    background-image: url(../images/facebook_hover.svg);
-    background-color: #2196F3;
-    background-size: contain;
-    background-repeat: repeat;
-    border-radius: 44px;
+.social-wrapper .icon.facebook {
+    background-image: url(../images/icons/facebook.svg);
 }
 
-.team_item-social-link a .team_item-social-link-linkedin {
-    float: left;
-    margin-left: 37px;
-    width: 20px;
-    height: 20px;
-    background-image: url(../images/linkedin.svg);
-    background-repeat: repeat;
+.social-wrapper:hover .icon.facebook {
+    background-image: url(../images/icons/facebook_hover.svg);
 }
 
-.team_item-social-link a:hover .team_item-social-link-linkedin-hover {
-    margin: -10px;
-    width: 44px;
-    height: 44px;
-    background-image: url(../images/linkedin_hover.svg);
-    background-color: #2196F3;
-    background-size: contain;
-    background-repeat: repeat;
-    border-radius: 44px;
+.social-wrapper .icon.linkedin {
+    background-image: url(../images/icons/linkedin.svg);
+}
+
+.social-wrapper:hover .icon.linkedin {
+    background-image: url(../images/icons/linkedin_hover.svg);
 }
 
 /* ----------client_details------------ */
@@ -627,14 +602,46 @@ footer .contact-info_tel {
 .footer-social-link {
     float: left;
     height: 80px;
-    width: 250px;
-    margin-top: 72px;
+    margin: 72px 0 0 70px;
 }
 
 .footer-social-link p {
-     margin-left: 32px;
+   float: none;
+   margin: 0;
 }
 
-.footer .team_item-social-link {
-    padding: 0;
+.footer.social-wrapper .icon {
+    width: 20px;
+    height: 20px;
+}
+ 
+.footer-social-link__wrapper {
+    margin-top: 20px;
+    height: 44px;
+}
+
+.footer.social-wrapper  {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+}
+
+.footer.social-wrapper:hover {
+    background-color: #2196F3;
+}
+
+
+.footer.social-wrapper .icon.instagram {
+    background-image: url(../images/icons/instagram_hover.svg);
+}
+
+.footer.social-wrapper .icon.twitter {
+    background-image: url(../images/icons/twitter_hover.svg);
+}
+
+.footer.social-wrapper .icon.facebook {
+    background-image: url(../images/icons/facebook_hover.svg);
+}
+
+.footer.social-wrapper .icon.linkedin {
+    background-image: url(../images/icons/linkedin_hover.svg);
 }
