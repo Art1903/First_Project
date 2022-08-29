@@ -1,0 +1,148 @@
+/* --------------main---------------- */
+main {
+    width: 100%;
+}
+/* --------------catalog------------ */
+
+.catalog {
+    display: flex;
+    letter-spacing: 0.03em;
+    flex-wrap: wrap;
+   
+    justify-content: space-between;
+}
+
+/* ------catalog-filters------ */
+
+.catalog-filters {
+    display: flex;
+    margin-top: 94px;
+    justify-content: center;
+}
+
+.catalog-filters a {
+    text-decoration: none;
+    padding: 10px 22px;
+    margin-right: 8px;
+    background-color: #F5F4FA;
+    color: #212121;
+}
+
+.catalog-filters a:hover {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+/* ------catalog-item------ */
+
+.catalog_item {
+    margin-top: 50px;
+    width: 370px;
+    height: 404px;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+
+.catalog_item p {
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #212121;
+    width: 322px;
+    margin: 20px 0 0 24px;
+    letter-spacing: 0.06em;
+}
+
+.catalog_item p:last-child{
+    margin-top: 4px;
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #757575;
+    width: 322px;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+
+
+.catalog_item a .catalog_item_notebook  {
+    float: left;
+    background-image: url(../images/one.svg);
+    background-repeat: repeat;
+    width: 370px;
+    height: 294px;
+}
+
+.catalog_item a:hover .catalog_item_notebook-hover {
+    float: left;
+    background-image: url(../images/hover\ overlay.svg);
+    background-repeat: repeat;
+    width: 370px;
+    height: 294px;
+}
+
+.catalog_item a .catalog_item_poster {
+    float: left;
+    background-image: url(../images/two.svg);
+    background-repeat: repeat;
+    width: 370px;
+    height: 294px;
+}
+
+.catalog_item a .catalog_item_restourant {
+    float: left;
+    background-image: url(../images/three.svg);
+    background-repeat: repeat;
+    width: 370px;
+    height: 294px;
+}
+
+.catalog_item a .catalog_item_prime {
+    float: left;
+    background-image: url(../images/four.svg);
+    background-repeat: repeat;
+    width: 370px;
+    height: 294px;
+}
+
+.catalog_item a .catalog_item_boxes {
+    float: left;
+    background-image: url(../images/five.svg);
+    background-repeat: repeat;
+    width: 370px;
+    height: 294px;
+}
+
+.catalog_item a .catalog_item_inspiration {
+    float: left;
+    background-image: url(../images/six.svg);
+    background-repeat: repeat;
+    width: 370px;
+    height: 294px;
+}
+
+.catalog_item a .catalog_item_book {
+    float: left;
+    background-image: url(../images/seven.svg);
+    background-repeat: repeat;
+    width: 370px;
+    height: 294px;
+}
+
+.catalog_item a .catalog_item_lab {
+    float: left;
+    background-image: url(../images/eight.svg);
+    background-repeat: repeat;
+    width: 370px;
+    height: 294px;
+}
+
+.catalog_item a .catalog_item_growing {
+    float: left;
+    background-image: url(../images/nine.svg);
+    background-repeat: repeat;
+    width: 370px;
+    height: 294px;
+}

@@ -15,32 +15,35 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Oleo+Script&family=Raleway:wght@400;700&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/second.css">
+    <link rel="stylesheet" href="style/portfolio.css">
+    <link rel="stylesheet" href="style/global.css">
     <title>WebStudio</title>
 </head>
 <body>
-  <header>
+    <header class="container">
         <div class="logo">
-          <a href="#"><p><span>Web</span>Studio</p></a> 
+            <a href="#">
+                <p><span>Web</span>Studio</p>
+            </a>
         </div>
         <div class="navigation">
-            <div class="navigation_studio">
-                <a href="#">Студія</a>
-            </div>
-            <div class="navigation_portfolio">
-                <a href="#">Портфоліо</a>
-            </div>
-            <div class="navigation_contact">
-                <a href="#">Контакти</a>
-            </div>
+            <a href="#" class="navigation__item">Студія</a>
+            <a href="#" class="navigation__item">Портфоліо</a>
+            <a href="#" class="navigation__item">Контакти</a>
         </div>
-        <div class="contact-info">
-            <a class="contact-info_mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="contact-info_tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        <div class="contact">
+            <a href="mailto:info@devstudio.com">
+                <div class="contact-info contact-info__letter"></div>
+                info@devstudio.com
+            </a>
+            <a href="tel:+380961111111">
+                <div class="contact-info contact-info__tel"></div>
+                +38 096 111 11 11
+            </a>
+        </div>
         </div>
     </header>
     <main>
-        <div class="catalog">
             <div class="catalog-filters">
                 <a href="#">Усі</a>
                 <a href="#">Веб-сайти</a>
@@ -48,6 +51,7 @@
                 <a href="#">Дизайн</a>
                 <a href="#">Маркетинг</a>
             </div>
+        <div class="container catalog">
             <div class="catalog_item">
                 <a href="#"> 
                     <div class="catalog_item_notebook">
@@ -140,69 +144,38 @@
             </div>
         </div>
     </main>
-     <footer>
-        <div class="footer_main-info">
-            <div class="logo">
-           <a href="#"><p><span>Web</span>Studio</p></a> 
+    <footer>
+        <div class="footer container">
+            <div class="footer_main-info">
+                <div class="logo">
+                    <a href="#">
+                        <p><span>Web</span>Studio</p>
+                    </a>
+                </div>
+                <p>м. Київ, пр-т Лесі Українки, 26</p>
+                <div class="footer-contact">
+                    <div class="contact-info"><a href="mailto:info@devstudio.com">info@devstudio.com</a></div>
+                    <div class="contact-info"><a href="tel:+380961111111">+38 096 111 11 11</a></div>
+                </div>
             </div>
-            <p>м. Київ, пр-т Лесі Українки, 26</p>
-            <div class="footer_contact-info">
-                <div class="contact-info_mail"><a href="mailto:info@devstudio.com">info@devstudio.com</a></div>
-                <div class="contact-info_tel"><a href="tel:+380961111111">+38 096 111 11 11</a></div>
+            <div class="footer-social-link">
+                <p>ПРИЄДНУЙТЕСЬ</p>
+                <div class="social-link">
+                    <div class="social-wrapper">
+                        <div class="icon instagram"></div>
+                    </div>
+                    <div class="social-wrapper">
+                        <div class="icon twitter"></div>
+                    </div>
+                    <div class="social-wrapper">
+                        <div class="icon facebook"></div>
+                    </div>
+                    <div class="social-wrapper">
+                        <div class="icon linkedin"></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="footer-social-link">
-            <p>ПРИЄДНУЙТЕСЬ</p>
-        <div class="team_item-social-link">
-            <div class="footer_item-social-link">
-                 <a href="#">
-                    <div class="team_item-social-link-instagram">
-                        <div class="team_item-social-link-instagram-hover"></div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="team_item-social-link-twitter">
-                        <div class="team_item-social-link-twitter-hover"></div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="team_item-social-link-facebook">
-                        <div class="team_item-social-link-facebook-hover"></div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="team_item-social-link-linkedin">
-                        <div class="team_item-social-link-linkedin-hover"></div>
-                    </div>
-                </a>
-            </div>      
-        </div>
-        </div>
-
-
-
-            <!-- <div class="footer_item-social-link">
-                <a href="#">
-                    <div class="footer_item-social-link-instagram">
-                        <div class="footer_item-social-link-instagram-hover"></div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="footer_item-social-link-twitter">
-                        <div class="footer_item-social-link-twitter-hover"></div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="footer_item-social-link-facebook">
-                        <div class="footer_item-social-link-facebook-hover"></div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="footer_item-social-link-linkedin">
-                        <div class="footer_item-social-link-linkedin-hover"></div>
-                    </div>
-                </a>
-            </div> -->
         </div>
     </footer>
 
