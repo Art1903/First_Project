@@ -47,10 +47,23 @@
         <main>
             <div class="banner">
                <div class="banner__title"><h1>Ефективні рішення для </br> вашого бізнесу</h1></div>
-                <div class="banner__submit-order">
-                    <a href="#">
-                        <p>Замовити послугу</p>
-                    </a>
+                <button class="open-button container" onclick="openForm()">Замовити послугу</button>
+                <div class="form-popup container" id="myForm">
+                    <form action="../action_page.php" class="form-container">
+                        <button type="button" class="cancel" onclick="closeForm()"></button>
+                        <h4>Залиште свої дані, ми вам передзвонимо</h4>
+                        <label for="text"><b>Імʼя</b></label>
+                        <input class="button-icon name" type="text" name="name" required>
+                        <label for="tel"><b>Телефон</b></label>
+                        <input class="button-icon tel" type="tel" name="tel" required>
+                        <label for="email"><b>Пошта</b></label>
+                        <input class="button-icon email" type="email" name="email" required>
+                        <label for="comment"><b>Коментар</b></label>
+                        <textarea name="message" placeholder="Введіть текст"></textarea>
+                        <input type="checkbox" name="checkbox" required>
+                        <label for="checkbox">Погоджуюся з розсилкою та приймаю <span>Умови договору</span></label>
+                        <button type="submit" class="btn">Вход</button>
+                    </form>
                 </div>
             </div>
             <div class="about-us">
@@ -253,6 +266,7 @@
                 </div>
             </div>
         </footer>
+<script src="js/script.js"></script>
     </body>
 
 </html>
