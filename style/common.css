@@ -1,0 +1,327 @@
+/* -------------Header---------- */
+
+/* --------Logo---------- */
+
+header {
+    background-color: #FFFFFF;
+    height: 80px;
+    font-size: 14px;
+}
+
+.logo {
+    float: left;
+    margin-top: 24px;
+    margin-right: 93px;
+}
+
+.logo p {
+    color: #000000;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    float: right;
+    margin: 0 auto;
+    letter-spacing: 0.03em;
+}
+
+.logo span {
+    color: #2196F3;
+    font-family: 'Raleway';
+}
+
+.logo p:hover {
+    color: #2196F3;
+}
+
+/* ----------Navigation----------- */
+
+.navigation {
+    float: left;
+    margin-top: 32px;
+}
+
+.navigation__item {
+    Width: 281px;
+    text-decoration: none;
+    color: #212121;
+    margin: 0 25px;
+}
+
+.navigation a:hover {
+    color: #2196F3;
+}
+
+/* -----------Contact-info--------- */
+
+.contact {
+    float: right;
+    margin-top: 32px;
+}
+
+.contact a {
+    float: left;
+    text-decoration: none;
+    color: #757575;
+    padding-right: 10px;
+}
+
+.contact__info {
+    float: left;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.contact a:first-child {
+    margin-right: 30px;
+}
+
+.contact a:hover {
+    color: #2196F3;
+}
+
+.contact a .contact__info {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contact a .contact__info.letter {
+    width: 16px;
+    height: 12px;
+}
+
+.contact a .contact__info.tel {
+    width: 10px;
+    height: 16px;
+}
+
+.contact__info.letter {
+    background-image: url(../images/icons/letter.svg);
+}
+
+.contact a:hover .contact__info.letter {
+    background-image: url(../images/icons/letter_hover.svg);
+}
+
+.contact__info.tel {
+    background-image: url(../images/icons/smartphone.svg);
+}
+
+.contact a:hover .contact__info.tel {
+    background-image: url(../images/icons/smartphone_hover.svg);
+}
+
+/* ------------social-link------------ */
+
+.social-link {
+    margin: 0 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-wrapper {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding-top: 12px;
+}
+
+.team .social-link {
+    margin-top: 18px;
+}
+
+.social-wrapper:hover {
+    background-color: #2196F3;
+}
+
+.social-wrapper .icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.social-wrapper .icon.instagram {
+    background-image: url(../images/icons/instagram.svg);
+}
+
+.social-wrapper:hover .icon.instagram {
+    background-image: url(../images/icons/instagram_hover.svg);
+}
+
+.social-wrapper .icon.twitter {
+    background-image: url(../images/icons/twitter.svg);
+}
+
+.social-wrapper:hover .icon.twitter {
+    background-image: url(../images/icons/twitter_hover.svg);
+}
+
+.social-wrapper .icon.facebook {
+    background-image: url(../images/icons/facebook.svg);
+}
+
+.social-wrapper:hover .icon.facebook {
+    background-image: url(../images/icons/facebook_hover.svg);
+}
+
+.social-wrapper .icon.linkedin {
+    background-image: url(../images/icons/linkedin.svg);
+}
+
+.social-wrapper:hover .icon.linkedin {
+    background-image: url(../images/icons/linkedin_hover.svg);
+}
+
+/* -----------footer------------ */
+
+footer {
+    height: 252px;
+    background-color: #2F303A;
+    padding: 0 215px;
+}
+
+/* -----footer_main-info-------- */
+
+.footer.container {
+    display: flex;
+    margin: 0 auto;
+}
+
+.footer__main-info {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__main-info .logo {
+    margin-top: 0;
+}
+
+footer .logo p {
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    height: 31px;
+}
+
+footer p {
+    font-family: 'Roboto';
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+footer .contact-info {
+    margin-top: 9px;
+    float: none;
+}
+
+footer .contact-info a {
+    text-decoration: none;
+    color: #757575;
+}
+
+.footer-contact a:hover {
+    color: #2196F3;
+}
+
+/* ------------footer-social-link--------- */
+
+.footer__social-link {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .social-link {
+    margin: 20px 0;
+    width: 206px;
+}
+
+.footer__social-link p {
+    margin-top: 72px;
+}
+
+footer .social-wrapper {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer .social-wrapper .icon.instagram {
+    background-image: url(../images/icons/social-wrapper/instagram-footer.svg);
+}
+
+footer .social-wrapper .icon.twitter {
+    background-image: url(../images/icons/social-wrapper/twitter-footer.svg);
+}
+
+footer .social-wrapper .icon.facebook {
+    background-image: url(../images/icons/social-wrapper/facebook-footer.svg);
+}
+
+footer .social-wrapper .icon.linkedin {
+    background-image: url(../images/icons/social-wrapper/linkedin-footer.svg);
+}
+
+/* ------------social-link------------ */
+
+.social-link {
+    margin: 0 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-wrapper {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding-top: 12px;
+}
+
+.team .social-link {
+    margin-top: 18px;
+}
+
+.social-wrapper:hover {
+    background-color: #2196F3;
+}
+
+.social-wrapper .icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.social-wrapper .icon.instagram {
+    background-image: url(../images/icons/social-wrapper/instagram.svg);
+}
+
+.social-wrapper:hover .icon.instagram {
+    background-image: url(../images/icons/social-wrapper/instagram_hover.svg);
+}
+
+.social-wrapper .icon.twitter {
+    background-image: url(../images/icons/social-wrapper/twitter.svg);
+}
+
+.social-wrapper:hover .icon.twitter {
+    background-image: url(../images/icons/social-wrapper/twitter_hover.svg);
+}
+
+.social-wrapper .icon.facebook {
+    background-image: url(../images/icons/social-wrapper/facebook.svg);
+}
+
+.social-wrapper:hover .icon.facebook {
+    background-image: url(../images/icons/social-wrapper/facebook_hover.svg);
+}
+
+.social-wrapper .icon.linkedin {
+    background-image: url(../images/icons/social-wrapper/linkedin.svg);
+}
+
+.social-wrapper:hover .icon.linkedin {
+    background-image: url(../images/icons/social-wrapper/linkedin_hover.svg);
+}

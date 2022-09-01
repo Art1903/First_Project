@@ -1,14 +1,17 @@
-/* --------------main---------------- */
-main {
-    width: 100%;
+/* ------------Header container--------- */
+
+header {
+    border-bottom: 1px solid #ECECEC;;
 }
+
 /* --------------catalog------------ */
 
 .catalog {
     display: flex;
+    padding-top: 48px;
     letter-spacing: 0.03em;
     flex-wrap: wrap;
-   
+    padding-bottom: 62px;
     justify-content: space-between;
 }
 
@@ -26,6 +29,7 @@ main {
     margin-right: 8px;
     background-color: #F5F4FA;
     color: #212121;
+    border-radius: 4px;
 }
 
 .catalog-filters a:hover {
@@ -35,114 +39,74 @@ main {
 
 /* ------catalog-item------ */
 
-.catalog_item {
-    margin-top: 50px;
+.catalog-item {
+    margin-bottom: 32px;
     width: 370px;
     height: 404px;
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
 }
 
-.catalog_item p {
-    float: left;
+.catalog-item__title {
     font-size: 18px;
     font-weight: 700;
     line-height: 36px;
     color: #212121;
-    width: 322px;
-    margin: 20px 0 0 24px;
+    margin: 20px 0 4px 24px;
     letter-spacing: 0.06em;
 }
 
-.catalog_item p:last-child{
-    margin-top: 4px;
-    float: left;
+.catalog-item p:last-child{
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     color: #757575;
-    width: 322px;
     letter-spacing: 0.03em;
-    margin-bottom: 20px;
+    margin-left:24px;
 }
 
+.catalog-item__goods {
+    width: 370px;
+    height: 294px; 
+    background-repeat: no-repeat;
+}
 
-.catalog_item a .catalog_item_notebook  {
-    float: left;
+.catalog-item a .catalog-item__goods.notebook  {
     background-image: url(../images/one.svg);
-    background-repeat: repeat;
-    width: 370px;
-    height: 294px;
 }
 
-.catalog_item a:hover .catalog_item_notebook-hover {
-    float: left;
+.catalog-item a:hover .catalog-item__goods.notebook {
     background-image: url(../images/hover\ overlay.svg);
-    background-repeat: repeat;
-    width: 370px;
-    height: 294px;
 }
 
-.catalog_item a .catalog_item_poster {
-    float: left;
+.catalog-item a .catalog-item__goods.poster {
     background-image: url(../images/two.svg);
-    background-repeat: repeat;
-    width: 370px;
-    height: 294px;
 }
 
-.catalog_item a .catalog_item_restourant {
-    float: left;
+.catalog-item a .catalog-item__goods.restourant {
     background-image: url(../images/three.svg);
-    background-repeat: repeat;
-    width: 370px;
-    height: 294px;
 }
 
-.catalog_item a .catalog_item_prime {
-    float: left;
+.catalog-item a .catalog-item__goods.prime {
     background-image: url(../images/four.svg);
-    background-repeat: repeat;
-    width: 370px;
-    height: 294px;
 }
 
-.catalog_item a .catalog_item_boxes {
-    float: left;
+.catalog-item a .catalog-item__goods.boxes {
     background-image: url(../images/five.svg);
-    background-repeat: repeat;
-    width: 370px;
-    height: 294px;
 }
 
-.catalog_item a .catalog_item_inspiration {
-    float: left;
+.catalog-item a .catalog-item__goods.inspiration {
     background-image: url(../images/six.svg);
-    background-repeat: repeat;
-    width: 370px;
-    height: 294px;
 }
 
-.catalog_item a .catalog_item_book {
-    float: left;
+.catalog-item a .catalog-item__goods.book {
     background-image: url(../images/seven.svg);
-    background-repeat: repeat;
-    width: 370px;
-    height: 294px;
 }
 
-.catalog_item a .catalog_item_lab {
-    float: left;
+.catalog-item a .catalog-item__goods.lab {
     background-image: url(../images/eight.svg);
-    background-repeat: repeat;
-    width: 370px;
-    height: 294px;
 }
 
-.catalog_item a .catalog_item_growing {
-    float: left;
+.catalog-item a .catalog-item__goods.growing {
     background-image: url(../images/nine.svg);
-    background-repeat: repeat;
-    width: 370px;
-    height: 294px;
 }

@@ -17,6 +17,7 @@
             rel="stylesheet">
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/global.css">
+        <link rel="stylesheet" href="style/common.css">
         <title>WebStudio</title>
     </head>
 
@@ -34,11 +35,11 @@
             </div>
             <div class="contact">
                 <a href="mailto:info@devstudio.com">
-                    <div class="contact-info contact-info__letter"></div>
+                    <div class="contact__info letter"></div>
                     info@devstudio.com
                 </a>
                 <a href="tel:+380961111111">
-                    <div class="contact-info contact-info__tel"></div>
+                    <div class="contact__info tel"></div>
                     +38 096 111 11 11
                 </a>
             </div>
@@ -47,186 +48,185 @@
         <main>
             <div class="banner">
                <div class="banner__title"><h1>Ефективні рішення для </br> вашого бізнесу</h1></div>
-                <button class="open-button container" onclick="openForm()">Замовити послугу</button>
-                <div class="form-popup container" id="myForm">
-                    <form action="../action_page.php" class="form-container">
-                        <button type="button" class="cancel" onclick="closeForm()"></button>
-                        <h4>Залиште свої дані, ми вам передзвонимо</h4>
-                        <label for="text"><b>Імʼя</b></label>
-                        <input class="button-icon name" type="text" name="name" required>
-                        <label for="tel"><b>Телефон</b></label>
-                        <input class="button-icon tel" type="tel" name="tel" required>
-                        <label for="email"><b>Пошта</b></label>
-                        <input class="button-icon email" type="email" name="email" required>
-                        <label for="comment"><b>Коментар</b></label>
-                        <textarea name="message" placeholder="Введіть текст"></textarea>
-                        <input type="checkbox" name="checkbox" required>
-                        <label for="checkbox">Погоджуюся з розсилкою та приймаю <span>Умови договору</span></label>
-                        <button type="submit" class="btn">Вход</button>
-                    </form>
-                </div>
+                <button class="banner__button container" onclick="openForm()">Замовити послугу</button>
+                    <div class="banner__form-container" id="myForm">
+                        <form action="../action_page.php" class="banner__open-btn">
+                            <button type="button" class="cancel" onclick="closeForm()"></button>
+                            <h4>Залиште свої дані, ми вам передзвонимо</h4>
+                            <label for="text"><b>Імʼя</b></label>
+                            <input class="open-btn__icon name" type="text" name="name" required>
+                            <label for="tel"><b>Телефон</b></label>
+                            <input class="open-btn__icon tel" type="tel" name="tel" required>
+                            <label for="email"><b>Пошта</b></label>
+                            <input class="open-btn__icon email" type="email" name="email" required>
+                            <label for="comment"><b>Коментар</b></label>
+                            <textarea name="message" placeholder="Введіть текст"></textarea>
+                            <input type="checkbox" name="checkbox" required>
+                            <label for="checkbox">Погоджуюся з розсилкою та приймаю <span>Умови договору</span></label>
+                            <button type="submit" class="btn">Вход</button>
+                        </form>
+                    </div>
             </div>
             <div class="about-us">
-                <div class="container about-us_benefit">
-                    <div class="about-us_benefit-item">
-                        <div class="about-us_benefit-feature">
+                <div class=" about-us__benefit container">
+                    <div class="about-us__benefit-item">
+                        <div class="about-us__benefit-feature">
                             <a href="#">
-                                <div class="about-us_benefit-feature-image satellite"></div>
+                                <div class="about-us__benefit-image satellite"></div>
                             </a>
                         </div>
-                        <p class="about-us_benefit-item-title">УВАГА ДО ДЕТАЛЕЙ</p>
+                        <p class="about-us__benefit-title">УВАГА ДО ДЕТАЛЕЙ</p>
                         <p>Ідейні міркування, і навіть початок
                             повсякденної роботи з формування
                             позиції.</p>
                     </div>
-                    <div class="about-us_benefit-item">
-                        <div class="about-us_benefit-feature">
+                    <div class="about-us__benefit-item">
+                        <div class="about-us__benefit-feature">
                             <a href="#">
-                                <div class="about-us_benefit-feature-image watch"></div>
+                                <div class="about-us__benefit-image watch"></div>
                             </a>
                         </div>
-                        <p class="about-us_benefit-item-title">ПУНКТУАЛЬНІСТЬ</p>
+                        <p class="about-us__benefit-title">ПУНКТУАЛЬНІСТЬ</p>
                         <p>Завдання організації, особливо рамки
                             і місце навчання кадрів тягне у себе.</p>
                     </div>
-                    <div class="about-us_benefit-item">
-                        <div class="about-us_benefit-feature">
+                    <div class="about-us__benefit-item">
+                        <div class="about-us__benefit-feature">
                             <a href="#">
-                                <div class="about-us_benefit-feature-image diagram"></div>
+                                <div class="about-us__benefit-image diagram"></div>
                             </a>
                         </div>
-                        <p class="about-us_benefit-item-title">ПЛАНУВАННЯ</p>
+                        <p class="about-us__benefit-title">ПЛАНУВАННЯ</p>
                         <p>Так само консультація з широким
                             активом значною мірою зумовлює.</p>
                     </div>
-                    <div class="about-us_benefit-item">
-                        <div class="about-us_benefit-feature">
+                    <div class="about-us__benefit-item">
+                        <div class="about-us__benefit-feature">
                             <a href="#">
-                                <div class="about-us_benefit-feature-image astronaut"></div>
+                                <div class="about-us__benefit-image astronaut"></div>
                             </a>
                         </div>
-                        <p class="about-us_benefit-item-title">СУЧАСНІ ТЕХНОЛОГІЇ</p>
+                        <p class="about-us__benefit-title">СУЧАСНІ ТЕХНОЛОГІЇ</p>
                         <p>Значимість цих проблем настільки
                             очевидна, що реалізація планових
                             завдань.</p>
                     </div>
                 </div>
-                    <div class="container about-us_details">
-                        <h2 class="about-us_details title">Чим ми займаємося</h2>
-                        <div class="container about-us__details_image">
-                            <div class="about-us_details-item">
-                                <img src="images/about-us/first.jpeg" alt="programming">
+                <div class="about-us__details container">
+                    <h2 class="about-us__details title">Чим ми займаємося</h2>
+                    <div class="about-us__details-image container">
+                        <div class="about-us__details-item">
+                            <img src="images/wellpapers/about-us/first.jpeg" alt="programming">
+                        </div>
+                        <div class="about-us__details-item">
+                            <img src="images/wellpapers/about-us/second.jpeg" alt="Design">
+                        </div>
+                        <div class="about-us__details-item">
+                            <img src="images/wellpapers/about-us/third.jpeg" alt="Color on ipad">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team">
+                <h2 class="team__title">Наша команда</h2>
+                <div class="team-item container">
+                    <div class="team-item__member">
+                        <img src="images/wellpapers/team/Product Designer.svg" alt="Product Designer">
+                        <p class="team-item__leader">Ігор Демʼяненко</p>
+                        <p>Product Designer</p>
+                        <div class="social-link">
+                            <div class="social-wrapper">
+                                <div class="icon instagram"></div>
                             </div>
-                            <div class="about-us_details-item">
-                                <img src="images/about-us/second.jpeg" alt="Design">
+                            <div class="social-wrapper">
+                                <div class="icon twitter"></div>
                             </div>
-                            <div class="about-us_details-item">
-                                <img src="images/about-us/third.jpeg" alt="Color on ipad">
+                            <div class="social-wrapper">
+                                <div class="icon facebook"></div>
+                            </div>
+                            <div class="social-wrapper">
+                                <div class="icon linkedin"></div>
                             </div>
                         </div>
                     </div>
-            </div>
-                <div class="team">
-                    <h2 class="team title">Наша команда</h2>
-                    <div class="container team-item">
-                        <div class="team-item-member">
-                            <img src="images/team/Product Designer.svg" alt="Product Designer">
-                            <p class="team-item-leader">Ігор Демʼяненко</p>
-                            <p>Product Designer</p>
-                            <div class="social-link">
-                                <div class="social-wrapper">
-                                    <div class="icon instagram"></div>
-                                </div>
-                                <div class="social-wrapper">
-                                    <div class="icon twitter"></div>
-                                </div>
-                                <div class="social-wrapper">
-                                    <div class="icon facebook"></div>
-                                </div>
-                                <div class="social-wrapper">
-                                    <div class="icon linkedin"></div>
-                                </div>
+                    <div class="team-item__member">
+                        <img src="images/wellpapers/team/Frontend Developer.svg" alt="Frontend Developer">
+                        <p class="team-item__leader">Ольга Рєпіна</p>
+                        <p>Frontend Developer</p>
+                        <div class="social-link">
+                            <div class="social-wrapper">
+                                <div class="icon instagram"></div>
+                            </div>
+                            <div class="social-wrapper">
+                                <div class="icon twitter"></div>
+                            </div>
+                            <div class="social-wrapper">
+                                <div class="icon facebook"></div>
+                            </div>
+                            <div class="social-wrapper">
+                                <div class="icon linkedin"></div>
                             </div>
                         </div>
-                        <div class="team-item-member">
-                            <img src="images/team/Frontend Developer.svg" alt="Frontend Developer">
-                            <p class="team-item-leader">Ольга Рєпіна</p>
-                            <p>Frontend Developer</p>
-                            <div class="social-link">
-                                <div class="social-wrapper">
-                                    <div class="icon instagram"></div>
-                                </div>
-                                <div class="social-wrapper">
-                                    <div class="icon twitter"></div>
-                                </div>
-                                <div class="social-wrapper">
-                                    <div class="icon facebook"></div>
-                                </div>
-                                <div class="social-wrapper">
-                                    <div class="icon linkedin"></div>
-                                </div>
+                    </div>
+                    <div class="team-item__member">
+                        <img src="images/wellpapers/team/Marketing.png" alt="Marketing">
+                        <p class="team-item__leader">Микола Тарасов</p>
+                        <p>Marketing</p>
+                        <div class="social-link">
+                            <div class="social-wrapper">
+                                <div class="icon instagram"></div>
+                            </div>
+                            <div class="social-wrapper">
+                                <div class="icon twitter"></div>
+                            </div>
+                            <div class="social-wrapper">
+                                <div class="icon facebook"></div>
+                            </div>
+                            <div class="social-wrapper">
+                                <div class="icon linkedin"></div>
                             </div>
                         </div>
-                        <div class="team-item-member">
-                            <img src="images/team/Marketing.png" alt="Marketing">
-                            <p class="team-item-leader">Микола Тарасов</p>
-                            <p>Marketing</p>
-                            <div class="social-link">
-                                <div class="social-wrapper">
-                                    <div class="icon instagram"></div>
-                                </div>
-                                <div class="social-wrapper">
-                                    <div class="icon twitter"></div>
-                                </div>
-                                <div class="social-wrapper">
-                                    <div class="icon facebook"></div>
-                                </div>
-                                <div class="social-wrapper">
-                                    <div class="icon linkedin"></div>
-                                </div>
+                    </div>
+                    <div class="team-item__member">
+                        <img src="images/wellpapers/team/UI Designer.svg" alt="UI Designer">
+                        <p class="team-item__leader">Михайло Єрмаков</p>
+                        <p>UI Designer</p>
+                        <div class="social-link">
+                            <div class="social-wrapper">
+                                <div class="icon instagram"></div>
                             </div>
-                        </div>
-                        <div class="team-item-member">
-                            <img src="images/team/UI Designer.svg" alt="UI Designer">
-                            <p class="team-item-leader">Михайло Єрмаков</p>
-                            <p>UI Designer</p>
-                            <div class="social-link">
-                                <div class="social-wrapper">
-                                    <div class="icon instagram"></div>
-                                </div>
-                                <div class="social-wrapper">
-                                    <div class="icon twitter"></div>
-                                </div>
-                                <div class="social-wrapper">
-                                    <div class="icon facebook"></div>
-                                </div>
-                                <div class="social-wrapper">
-                                    <div class="icon linkedin"></div>
-                                </div>
+                            <div class="social-wrapper">
+                                <div class="icon twitter"></div>
+                            </div>
+                            <div class="social-wrapper">
+                                <div class="icon facebook"></div>
+                            </div>
+                            <div class="social-wrapper">
+                                <div class="icon linkedin"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container clients_details">
-                <h2 class="clients_details title">Постійні клієнти</h2>
-                <div class="clients_details-company">
-                    <div class="clients_details-company-image">
+            <div class="container clients-details">
+                <h2 class="clients-details__title">Постійні клієнти</h2>
+                <div class="clients-details__company">
+                    <div class="clients-details__image">
                         <div class="logo YA_CO"></div>
                     </div>
-                    <div class="clients_details-company-image">
+                    <div class="clients-details__image">
                         <div class="logo tagline"></div>
                     </div>
-                    <div class="clients_details-company-image">
+                    <div class="clients-details__image">
                         <div class="logo third"></div>
                     </div>
-                    <div class="clients_details-company-image">
+                    <div class="clients-details__image">
                         <div class="logo foster"></div>
                     </div>
-                    <div class="clients_details-company-image">
+                    <div class="clients-details__image">
                         <div class="logo brand"></div>
                     </div>
-                    <div class="clients_details-company-image">
+                    <div class="clients-details__image">
                         <div class="logo cube"></div>
                     </div>
                 </div>
@@ -234,7 +234,7 @@
         </main>
         <footer>
             <div class="footer container">
-                <div class="footer_main-info">
+                <div class="footer__main-info">
                     <div class="logo">
                         <a href="#">
                             <p><span>Web</span>Studio</p>
@@ -246,7 +246,7 @@
                         <div class="contact-info"><a href="tel:+380961111111">+38 096 111 11 11</a></div>
                     </div>
                 </div>
-                <div class="footer-social-link">
+                <div class="footer__social-link">
                     <p>ПРИЄДНУЙТЕСЬ</p>
                     <div class="social-link">
                         <div class="social-wrapper">

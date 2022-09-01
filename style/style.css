@@ -1,65 +1,44 @@
-
 /* ------Banner----- */
 
 .banner {
     height: 600px;
-    background-image: url(../images/banner/banner.svg);
+    background-image: url(../images/wellpapers/banner/background\ img.svg);
 }
 
 .banner__title {
     padding-top: 200px;
 }
 
-.banner__submit-order.container {
-    font-size: 16px;
-    height: 50px;
-    width: 216px;
-    margin-top: 30px;
-    text-align: center;
-    background-color: #2196F3;
-    text-decoration: none;
-    margin-bottom: 200px;
-}
-
-.banner__submit-order a {
-    text-decoration: none;
-}
-
-.banner__submit-order p {
-    padding: 17px;
-    color: #FFFFFF;
-}
-
-.banner__submit-order p:hover {
-    color: black;
-}
-
 /* -----------button form-------------- */
 
-.open-button.container {
+.banner__button.container {
     display: flex;
     background-color: #2196F3;
     color: white;
     padding: 16px 20px;
+    margin-top: 30px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-.form-popup.container {
+.banner__form-container {
     max-width: 528px;
     border-radius: 4px;
-    position: relative;
-    margin: -226px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.form-container {
+.banner__form-container {
     width: 528px;
     height: 581px;
     padding: 40px;
     background-color: white;
 }
 
-.form-popup.container h4 {
+.banner__open-btn h4 {
     text-align: center;
     font-size: 20px;
     line-height: 23px;
@@ -67,30 +46,20 @@
     font-weight: 700;
 }
 
-.form-popup.container p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: #757575;
-}
-
-.form-popup.container p::before {
+.banner__open-btn p::before {
     width: 16px;
     height: 15px;
 }
 
-.form-popup.container label[for=checkbox] span {
+.banner__open-btn label[for=checkbox] span {
     color: #2196F3;
     text-decoration-line: underline;
 }
-
-.form-popup.container label[type=checkbox] {
+.banner__open-btn label[type=checkbox] {
     margin: 25px 52px;
 }
 
-.form-container label {
+.banner__open-btn label {
     font-family: 'Roboto';
     font-size: 12px;
     line-height: 14px;
@@ -98,8 +67,8 @@
     color: #757575;
 }
 
-.form-container input,
-.form-container textarea {
+.banner__open-btn input,
+.banner__open-btn textarea {
     border-radius: 4px;
     width: 448px;
     padding: 12.5px;
@@ -107,28 +76,27 @@
     border: 1px solid #21212133;
 }
 
-.form-container input[type=checkbox] {
+.banner__open-btn input[type=checkbox] {
     width: 16px;
     height: 15px;
 }
 
-.form-container input:hover,
-.form-container textarea:hover {
+.banner__open-btn input:hover,
+.banner__open-btn textarea:hover {
     border: 1px solid #2196F3;
 }
 
-.form-container .comment {
+.banner__open-btn .comment {
     height: 120px;
 }
 
-.form-container input[type=text]:focus,
-.form-container input[type=email]:focus,
-.form-container textarea {
+.banner__open-btn input[type=text]:focus,
+.banner__open-btn input[type=email]:focus,
+.banner__open-btn textarea {
     outline: none;
 }
 
-
-.form-container .button-icon {
+.banner__open-btn .open-btn__icon {
     padding: 12px 42px;
     height: 40px;
 }
@@ -139,31 +107,31 @@ textarea {
     resize: none;
 }
 
-.form-container .button-icon.name {
-    background: url(../images/button/persone.svg) no-repeat 15px 14px;
+.banner__open-btn .open-btn__icon.name {
+    background: url(../images/icons/button/persone.svg) no-repeat 15px 14px;
 }
 
-.form-container .button-icon.name:hover {
-    background: url(../images/button/persone_hover.svg) no-repeat 15px 14px;
+.banner__open-btn .open-btn__icon.name:hover {
+    background: url(../images/icons/button/persone_hover.svg) no-repeat 15px 14px;
 }
 
-.form-container .button-icon.tel {
-    background: url(../images/button/telephone.svg) no-repeat 13px 14px;
+.banner__open-btn .open-btn__icon.tel {
+    background: url(../images/icons/button/telephone.svg) no-repeat 13px 14px;
 }
 
-.form-container .button-icon.tel:hover {
-    background: url(../images/button/telephone_hover.svg) no-repeat 13px 14px;
+.banner__open-btn .open-btn__icon.tel:hover {
+    background: url(../images/icons/button/telephone_hover.svg) no-repeat 13px 14px;
 }
 
-.form-container .button-icon.email {
-    background: url(../images/button/mail.svg) no-repeat 13.5px 14px;
+.banner__open-btn .open-btn__icon.email {
+    background: url(../images/icons/button/mail.svg) no-repeat 13.5px 14px;
 }
 
-.form-container .button-icon.email:hover {
-    background: url(../images/button/mail_hover.svg) no-repeat 13.5px 14px;
+.banner__open-btn .open-btn__icon.email:hover {
+    background: url(../images/icons/button/mail_hover.svg) no-repeat 13.5px 14px;
 }
 
-.form-container button {
+.banner__open-btn button {
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
@@ -171,7 +139,7 @@ textarea {
     cursor: pointer;
 }
 
-.form-container button.btn {
+.banner__open-btn button.btn {
     margin: 30px 124px;
     height: 50px;
     width: 200px;
@@ -180,10 +148,10 @@ textarea {
     background-color: #2196F3;
 }
 
-.form-container button.cancel {
+.banner__open-btn button.cancel {
     width: 30px;
     height: 30px;
-    background-image: url(../images/button/exit.svg);
+    background-image: url(../images/icons/button/cross.svg);
     background-repeat: no-repeat;
     border-radius: 50%;
     border: 1px solid #0000001A;
@@ -193,27 +161,22 @@ textarea {
     margin: -32px 8px 0 450px;
 }
 
-.form-container button.cancel:hover {
-    background-image: url(../images/button/exit_hover.svg)
+.banner__open-btn button.cancel:hover {
+    background-image: url(../images/icons/button/cross_hover.svg)
 }
 
-.form-container .btn:hover,
-.open-button:hover {
-    opacity: 1;
-}
-
-/* -----------about us benefit-------------- */
+/* -----------about-us__benefit-------------- */
 
 main .about-us {
     margin: 94px 0;
 }
 
-.about-us_benefit {
+.about-us__benefit {
     display: flex;
     justify-content: space-between;
 }
 
-.about-us_benefit-item-title {
+.about-us__benefit-title {
     font-size: 14px;
     font-weight: 700;
     margin: 30px 0 10px 0;
@@ -221,18 +184,18 @@ main .about-us {
     Font-style: Medium;
 }
 
-.about-us_benefit-item {
+.about-us__benefit-item {
     width: 270px;
     line-height: 24px;
 }
 
-.about-us_benefit-feature {
+.about-us__benefit-feature {
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
 }
 
-.about-us_benefit-feature a .about-us_benefit-feature-image {
+.about-us__benefit-feature a .about-us__benefit-image {
     float: left;
     margin: 25px 100px;
     width: 70px;
@@ -257,23 +220,23 @@ main .about-us {
     background-image: url(../images/about-us/astronaut.svg);
 }
 
-/* -----------about us details------------ */
+/* -----------about-us__details------------ */
 
-.about-us__details_image {
+.about-us__details-image {
     display: flex;
     justify-content: space-between;
 }
 
-.about-us_details-item {
+.about-us__details-item {
     margin-top: 50px;
 }
 
-.about-us_details.title {
+.about-us__details.title {
     display: flex;
     justify-content: center;
 }
 
-.about-us_details-item img {
+.about-us__details-item img {
     width: 370px;
     height: 294px;
 }
@@ -286,7 +249,7 @@ main .about-us {
     letter-spacing: 0.03em;
 }
 
-.team.title {
+.team__title {
     padding-top: 94px;
     display: flex;
     justify-content: center;
@@ -297,18 +260,18 @@ main .about-us {
     justify-content: space-between;
 }
 
-.team-item-member {
+.team-item__member {
     margin: 50px 0 94px;
     width: 270px;
     height: 428px;
     background-color: #FFFFFF;
 }
 
-.team-item-member:last-child {
+.team-item__member:last-child {
     margin-right: 0;
 }
 
-.team-item-leader {
+.team-item__leader {
     font-weight: 500;
     margin-top: 30px;
     color: #212121;
@@ -331,95 +294,86 @@ main .about-us {
 
 /* ----------client_details------------ */
 
-.clients_details {
+.clients-details {
     background-color: #FFFFFF;
 }
 
-.clients_details.title {
+.clients-details__title {
     display: flex;
     margin-bottom: 50px; 
     justify-content: center;  
 }
 
-.clients_details-company {
+.clients-details__company {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 94px;
 }
 
-.clients_details-company {
-    height: 92px;
-    width: fit-content;
-    margin: 0 auto 94px;
-}
-
-.clients_details-company-image {
+.clients-details__image {
     float: left;
     width: 168px;
     height: 90px;
     cursor: pointer;
     border-radius: 4px;
-     border: 1px solid #AFB1B8;
+    border: 1px solid #AFB1B8;
     margin-right: 30px;
 }
 
-.clients_details-company-image:last-child {
-    margin-right: 0;
-}
-
-.clients_details-company-image:hover {
+.clients-details__image:hover {
     border: 1px solid #2196F3;
 }
 
-.clients_details-company-image .logo {
+.clients-details__image .logo {
     width: 106px;
     height: 60px;
     margin: 16px 32px;
 }
 
-.clients_details-company-image .logo.YA_CO {
+.clients-details__image .logo.YA_CO {
     background-image: url(../images/clients/YA\ &\ CO.svg);
 }
 
-.clients_details-company-image:hover .logo.YA_CO {
+.clients-details__image:hover .logo.YA_CO {
     background-image: url(../images/clients/YA\ &\ CO_hover.svg);
 }
 
-.clients_details-company-image .logo.tagline {
+.clients-details__image .logo.tagline {
     background-image: url(../images/clients/tagline.svg);
 }
 
-.clients_details-company-image:hover .logo.tagline {
+.clients-details__image:hover .logo.tagline {
     background-image: url(../images/clients/tagline_hover.svg);
 }
 
-.clients_details-company-image .logo.third {
+.clients-details__image .logo.third {
     background-image: url(../images/clients/company.svg);
 }
 
-.clients_details-company-image:hover .logo.third {
+.clients-details__image:hover .logo.third {
     background-image: url(../images/clients/company_hover.svg);
 }
 
-.clients_details-company-image .logo.foster {
+.clients-details__image .logo.foster {
     background-image: url(../images/clients/FOSTER\ PETERS.svg);
 }
 
-.clients_details-company-image:hover .logo.foster {
+.clients-details__image:hover .logo.foster {
     background-image: url(../images/clients/FOSTER\ PETERS_hover.svg);
 }
 
-.clients_details-company-image .logo.brand {
+.clients-details__image .logo.brand {
     background-image: url(../images/clients/brand.svg);
 }
 
-.clients_details-company-image:hover .logo.brand {
+.clients-details__image:hover .logo.brand {
     background-image: url(../images/clients/brand_hover.svg);
 }
 
-.clients_details-company-image .logo.cube {
+.clients-details__image .logo.cube {
     background-image: url(../images/clients/cube.svg);
 }
 
-.clients_details-company-image:hover .logo.cube {
+.clients-details__image:hover .logo.cube {
     background-image: url(../images/clients/cube_hover.svg);
 }
