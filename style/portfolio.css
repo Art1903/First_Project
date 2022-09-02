@@ -72,41 +72,41 @@ header {
 }
 
 .catalog-item a .catalog-item__goods.notebook  {
-    background-image: url(../images/one.svg);
+    background-image: url(../images/wellpapers/catalog-item/one.svg);
 }
 
 .catalog-item a:hover .catalog-item__goods.notebook {
-    background-image: url(../images/hover\ overlay.svg);
+    background-image: url(../images/wellpapers/catalog-item/hover\ overlay.svg);
 }
 
 .catalog-item a .catalog-item__goods.poster {
-    background-image: url(../images/two.svg);
+    background-image: url(../images/wellpapers/catalog-item/two.svg);
 }
 
 .catalog-item a .catalog-item__goods.restourant {
-    background-image: url(../images/three.svg);
+    background-image: url(../images/wellpapers/catalog-item/three.svg);
 }
 
 .catalog-item a .catalog-item__goods.prime {
-    background-image: url(../images/four.svg);
+    background-image: url(../images/wellpapers/catalog-item/four.svg);
 }
 
 .catalog-item a .catalog-item__goods.boxes {
-    background-image: url(../images/five.svg);
+    background-image: url(../images/wellpapers/catalog-item/five.svg);
 }
 
 .catalog-item a .catalog-item__goods.inspiration {
-    background-image: url(../images/six.svg);
+    background-image: url(../images/wellpapers/catalog-item/six.svg);
 }
 
 .catalog-item a .catalog-item__goods.book {
-    background-image: url(../images/seven.svg);
+    background-image: url(../images/wellpapers/catalog-item/seven.svg);
 }
 
 .catalog-item a .catalog-item__goods.lab {
-    background-image: url(../images/eight.svg);
+    background-image: url(../images/wellpapers/catalog-item/eight.svg);
 }
 
 .catalog-item a .catalog-item__goods.growing {
-    background-image: url(../images/nine.svg);
+    background-image: url(../images/wellpapers/catalog-item/nine.svg);
 }

@@ -20,7 +20,6 @@
         <link rel="stylesheet" href="style/common.css">
         <title>WebStudio</title>
     </head>
-
     <body>
         <header class="container">
             <div class="logo">
@@ -30,7 +29,7 @@
             </div>
             <div class="navigation">
                 <a href="#" class="navigation__item">Студія</a>
-                <a href="#" class="navigation__item">Портфоліо</a>
+                <a href="portfolio.html" class="navigation__item">Портфоліо</a>
                 <a href="#" class="navigation__item">Контакти</a>
             </div>
             <div class="contact">
@@ -262,7 +261,16 @@
                             <div class="icon linkedin"></div>
                         </div>
                     </div>
-                    </div>
+                </div>
+                <div class="footer__subscription">
+                    <p>Підпишись на розсилку</p>
+                    <form action="../action_page.php" class="footer__form container">
+                        <input class="footer__form-email" placeholder="E-mail" type="text" name="email" required>
+                        <button type="submit"> <div class="subscription__button">Підписатися</div> 
+                            <div class="footer__btn"></div>
+                        </button>
+                    </form>
+                </div>
                 </div>
             </div>
         </footer>

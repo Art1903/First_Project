@@ -141,35 +141,35 @@ header {
 }
 
 .social-wrapper .icon.instagram {
-    background-image: url(../images/icons/instagram.svg);
+    background-image: url(../images/icons/social-wrapper/instagram.svg);
 }
 
 .social-wrapper:hover .icon.instagram {
-    background-image: url(../images/icons/instagram_hover.svg);
+    background-image: url(../images/icons/social-wrapper/instagram_hover.svg);
 }
 
 .social-wrapper .icon.twitter {
-    background-image: url(../images/icons/twitter.svg);
+    background-image: url(../images/icons/social-wrapper/twitter.svg);
 }
 
 .social-wrapper:hover .icon.twitter {
-    background-image: url(../images/icons/twitter_hover.svg);
+    background-image: url(../images/icons/social-wrapper/twitter_hover.svg);
 }
 
 .social-wrapper .icon.facebook {
-    background-image: url(../images/icons/facebook.svg);
+    background-image: url(../images/icons/social-wrapper/facebook.svg);
 }
 
 .social-wrapper:hover .icon.facebook {
-    background-image: url(../images/icons/facebook_hover.svg);
+    background-image: url(../images/icons/social-wrapper/facebook_hover.svg);
 }
 
 .social-wrapper .icon.linkedin {
-    background-image: url(../images/icons/linkedin.svg);
+    background-image: url(../images/icons/social-wrapper/linkedin.svg);
 }
 
 .social-wrapper:hover .icon.linkedin {
-    background-image: url(../images/icons/linkedin_hover.svg);
+    background-image: url(../images/icons/social-wrapper/linkedin_hover.svg);
 }
 
 /* -----------footer------------ */
@@ -184,7 +184,6 @@ footer {
 
 .footer.container {
     display: flex;
-    margin: 0 auto;
 }
 
 .footer__main-info {
@@ -192,6 +191,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 231px;
 }
 
 .footer__main-info .logo {
@@ -233,6 +233,7 @@ footer .contact-info a {
 .footer__social-link {
     display: flex;
     flex-direction: column;
+    margin-left: 70px;
 }
 
 footer .social-link {
@@ -264,64 +265,69 @@ footer .social-wrapper .icon.linkedin {
     background-image: url(../images/icons/social-wrapper/linkedin-footer.svg);
 }
 
-/* ------------social-link------------ */
+.footer__subscription {
+    margin: 83px 0 0 93px;
+}
 
-.social-link {
-    margin: 0 32px;
+.footer__subscription p {
+    color: #ffffff;
+    height: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.footer__form.container {
     display: flex;
-    justify-content: space-between;
+    margin-top: 20px;
 }
 
-.social-wrapper {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    cursor: pointer;
-    padding-top: 12px;
+.footer__form input {
+    padding: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF99;
+    background-color: #2F303A;
+    border: 1px solid #FFFFFF4D;
+    outline: none;
 }
 
-.team .social-link {
-    margin-top: 18px;
+.footer__form-email {
+    width: 358px;
+    border-radius: 4px;
+    margin-right: 12px;
 }
 
-.social-wrapper:hover {
+.footer__form button {
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
     background-color: #2196F3;
+    color: #FFFFFF;
+    border: none;
+    display: flex;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
 }
 
-.social-wrapper .icon {
-    width: 20px;
-    height: 20px;
-    margin: 0 auto;
+.subscription__button {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    width: 110px;
 }
 
-.social-wrapper .icon.instagram {
-    background-image: url(../images/icons/social-wrapper/instagram.svg);
-}
-
-.social-wrapper:hover .icon.instagram {
-    background-image: url(../images/icons/social-wrapper/instagram_hover.svg);
-}
-
-.social-wrapper .icon.twitter {
-    background-image: url(../images/icons/social-wrapper/twitter.svg);
-}
-
-.social-wrapper:hover .icon.twitter {
-    background-image: url(../images/icons/social-wrapper/twitter_hover.svg);
-}
-
-.social-wrapper .icon.facebook {
-    background-image: url(../images/icons/social-wrapper/facebook.svg);
-}
-
-.social-wrapper:hover .icon.facebook {
-    background-image: url(../images/icons/social-wrapper/facebook_hover.svg);
-}
-
-.social-wrapper .icon.linkedin {
-    background-image: url(../images/icons/social-wrapper/linkedin.svg);
-}
-
-.social-wrapper:hover .icon.linkedin {
-    background-image: url(../images/icons/social-wrapper/linkedin_hover.svg);
+button .footer__btn {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icons/icon\ send.svg);
+    background-repeat: no-repeat;
+    float: right;
 }
