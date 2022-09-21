@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ua">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,7 +27,7 @@
                 </a>
             </div>
             <div class="navigation">
-                <a href="#" class="navigation__item">Студія</a>
+                <a href="index.html" class="navigation__item home">Студія</a>
                 <a href="portfolio.html" class="navigation__item">Портфоліо</a>
                 <a href="#" class="navigation__item">Контакти</a>
             </div>
@@ -47,24 +46,26 @@
         <main>
             <div class="banner">
                <div class="banner__title"><h1>Ефективні рішення для </br> вашого бізнесу</h1></div>
-                <button class="banner__button container" onclick="openForm()">Замовити послугу</button>
-                    <div class="banner__form-container" id="myForm">
-                        <form action="../action_page.php" class="banner__open-btn">
-                            <button type="button" class="cancel" onclick="closeForm()"></button>
-                            <h4>Залиште свої дані, ми вам передзвонимо</h4>
-                            <label for="text"><b>Імʼя</b></label>
-                            <input class="open-btn__icon name" type="text" name="name" required>
-                            <label for="tel"><b>Телефон</b></label>
-                            <input class="open-btn__icon tel" type="tel" name="tel" required>
-                            <label for="email"><b>Пошта</b></label>
-                            <input class="open-btn__icon email" type="email" name="email" required>
-                            <label for="comment"><b>Коментар</b></label>
-                            <textarea name="message" placeholder="Введіть текст"></textarea>
-                            <input type="checkbox" name="checkbox" required>
-                            <label for="checkbox">Погоджуюся з розсилкою та приймаю <span>Умови договору</span></label>
-                            <button type="submit" class="btn">Вход</button>
-                        </form>
+                <button  type="button" class="banner__button container" onclick="openForm()">Замовити послугу</button>
+                <div class="banner__form-container" id="myForm">
+                    <div class="banner__form_black">
+                        <button type="button" class="cancel" onclick="closeForm()"></button>
+                                <form action="../action_page.php" class="banner__open-btn" method="get">
+                                    <h4>Залиште свої дані, ми вам передзвонимо</h4>
+                                    <label for="text"><b>Імʼя</b></label>
+                                    <input class="open-btn__icon name" type="text" name="name" required>
+                                    <label for="tel"><b>Телефон</b></label>
+                                    <input class="open-btn__icon tel" type="tel" name="tel" required>
+                                    <label for="email"><b>Пошта</b></label>
+                                    <input class="open-btn__icon email" type="email" name="email" required>
+                                    <label for="comment"><b>Коментар</b></label>
+                                    <textarea name="message" placeholder="Введіть текст"></textarea>
+                                    <input type="checkbox" name="checkbox" required>
+                                    <label for="checkbox">Погоджуюся з розсилкою та приймаю <span>Умови договору</span></label>
+                                    <button type="submit" class="btn">Вход</button>
+                                </form>
                     </div>
+                </div>
             </div>
             <div class="about-us">
                 <div class=" about-us__benefit container">

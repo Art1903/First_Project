@@ -24,7 +24,6 @@ header {
 }
 
 .catalog-filters a {
-    text-decoration: none;
     padding: 10px 22px;
     margin-right: 8px;
     background-color: #F5F4FA;
@@ -41,10 +40,13 @@ header {
 
 .catalog-item {
     margin-bottom: 32px;
-    width: 370px;
     height: 404px;
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
+}
+
+.catalog-item:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .catalog-item__title {
@@ -56,7 +58,7 @@ header {
     letter-spacing: 0.06em;
 }
 
-.catalog-item p:last-child{
+.catalog-item__service {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
@@ -75,8 +77,30 @@ header {
     background-image: url(../images/wellpapers/catalog-item/one.svg);
 }
 
-.catalog-item a:hover .catalog-item__goods.notebook {
-    background-image: url(../images/wellpapers/catalog-item/hover\ overlay.svg);
+.goods-hover {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2196F3;
+    padding: 24px;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.goods-hover__text {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    padding: 63px 24px;
+}
+
+.goods-hover:hover {
+    opacity: 1;
+    background-color: rgba(33, 150, 243, 0.7);
 }
 
 .catalog-item a .catalog-item__goods.poster {

@@ -42,12 +42,18 @@ header {
 
 .navigation__item {
     Width: 281px;
-    text-decoration: none;
     color: #212121;
     margin: 0 25px;
 }
 
-.navigation a:hover {
+.navigation__item.home, .navigation__item.portfolio {
+    padding-bottom: 28px;
+    border-bottom: 4px solid #2196F3;
+    border-radius: 2px;
+    color: #2196F3;
+}
+
+a.navigation__item:hover {
     color: #2196F3;
 }
 
