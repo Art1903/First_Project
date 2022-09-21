@@ -31,12 +31,29 @@ header {
     border-radius: 4px;
 }
 
+.catalog-filters__link.all,
+.catalog-filters__link.web, 
+.catalog-filters__link.apps,
+.catalog-filters__link.design,
+.catalog-filters__link.marketing {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
 .catalog-filters a:hover {
     color: #FFFFFF;
     background-color: #2196F3;
 }
 
 /* ------catalog-item------ */
+
+.navigation__item.home,
+.navigation__item.portfolio {
+    padding-bottom: 28px;
+    border-bottom: 4px solid #2196F3;
+    border-radius: 2px;
+    color: #2196F3;
+}
 
 .catalog-item {
     margin-bottom: 32px;
