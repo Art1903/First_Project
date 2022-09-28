@@ -1,12 +1,24 @@
-/* ------Banner----- */
+/* ------------Banner----------------- */
 
 .banner {
     height: 600px;
     background-image: url(../images/wellpapers/banner/background\ img.svg);
 }
 
+@media (min-width: 340px) and (max-width: 659px) {
+    .banner {
+        height: 400px;
+    }
+}
+
 .banner__title {
     padding-top: 200px;
+}
+
+@media (min-width: 340px) and (max-width: 659px) {
+    .banner__title {
+        padding-top: 118px;
+    }
 }
 
 /* -----------button form-------------- */
@@ -22,7 +34,18 @@
     cursor: pointer;
 }
 
-.banner__form-container {
+@media (min-width: 340px) and (max-width: 659px) {
+    .banner__button.container {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        padding: 10px 24px;
+    }
+}
+
+.banner__form_black {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -33,7 +56,7 @@
     background: rgba(0, 0, 0, .7);
 }
 
-.banner__form_black {
+.banner__form-container {
     position: fixed;
     background-color: white;
     max-width: 528px;
@@ -42,6 +65,13 @@
     transform: translate(-50%, -50%);
     border-radius: 4px;
     padding: 40px;
+}
+
+@media (min-width: 340px) and (max-width: 659px) {
+    .banner__form-container {
+        max-width: 450px;
+        max-height: 609px;
+    }
 }
 
 .banner__open-btn h4 {
@@ -80,6 +110,13 @@
     padding: 12.5px;
     margin: 4px 0 10px 0;
     border: 1px solid #21212133;
+}
+
+@media (min-width: 340px) and (max-width: 659px) {
+    .banner__open-btn input,
+    .banner__open-btn textarea {
+        width: 370px;
+    }
 }
 
 .banner__open-btn input[type=checkbox] {
@@ -155,6 +192,12 @@ textarea {
     background-color: #2196F3;
 }
 
+@media (min-width: 340px) and (max-width: 659px) {
+    .banner__open-btn button.btn {
+        margin: 31px 85px;
+    }
+}
+
 .cancel {
     width: 30px;
     height: 30px;
@@ -166,6 +209,12 @@ textarea {
     background-position: center;
     position: absolute;
     margin: -32px 8px 0 450px;
+}
+
+@media (min-width: 340px) and (max-width: 659px) {
+    .cancel {
+        margin-left: 372px;
+    }
 }
 
 .cancel:hover {
@@ -180,7 +229,14 @@ main .about-us {
 
 .about-us__benefit {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+@media (min-width: 340px) and (max-width: 767px) {
+    .about-us__benefit {
+        justify-content: space-evenly;
+    }
 }
 
 .about-us__benefit-title {
@@ -191,15 +247,44 @@ main .about-us {
     Font-style: Medium;
 }
 
+@media (min-width: 340px) and (max-width: 767px) {
+    .about-us__benefit-title {
+        text-align: center;
+    }
+}
+
 .about-us__benefit-item {
     width: 270px;
     line-height: 24px;
+}
+
+@media (min-width: 340px) and (max-width: 599px) {
+    .about-us__benefit-item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 340px) and (max-width: 659px) {
+    .about-us__benefit-item p {
+        font-size: 14px;
+        font-weight: 400;
+    }
 }
 
 .about-us__benefit-feature {
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
+}
+
+@media (min-width: 340px) and (max-width: 659px) {
+    .about-us__benefit-feature {
+        width: 100%;
+        float: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .about-us__benefit-feature a .about-us__benefit-image {
@@ -231,16 +316,39 @@ main .about-us {
 
 .about-us__details-image {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+@media (min-width: 340px) and (max-width: 767px) {
+    .about-us__details-image {
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .about-us__details-item {
     margin-top: 50px;
 }
 
+@media (min-width: 340px) and (max-width: 659px) {
+    .about-us__details-item {
+        margin-top: 10px;
+    }
+}
+
 .about-us__details.title {
     display: flex;
     justify-content: center;
+}
+
+@media (min-width: 340px) and (max-width: 659px) {
+    .about-us__details.title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33px;
+    }
 }
 
 .about-us__details-item img {
@@ -253,7 +361,12 @@ main .about-us {
 
 .team {
     background-color: #F5F4FA;
-    letter-spacing: 0.03em;
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .team {
+        padding-bottom: 60px;
+    }
 }
 
 .team__title {
@@ -262,9 +375,29 @@ main .about-us {
     justify-content: center;
 }
 
+@media (min-width: 340px) and (max-width: 659px) {
+    .team__title {
+        padding-top: 24px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33px;
+    }
+}
+
 .team-item {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+@media (min-width: 340px) and (max-width: 767px) {
+    .team-item {
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 60px;
+        flex-direction: column;
+    }
 }
 
 .team-item__member {
@@ -272,6 +405,12 @@ main .about-us {
     width: 270px;
     height: 428px;
     background-color: #FFFFFF;
+}
+
+@media (min-width: 340px) and (max-width: 767px) {
+    .team-item__member {
+        margin: 30px 0 0;
+    }
 }
 
 .team-item__member:last-child {
@@ -313,9 +452,22 @@ main .about-us {
 
 .clients-details__company {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 94px;
 }
+
+@media (min-width: 340px) and (max-width: 767px) {
+    .clients-details__company {
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+    }
+}
+
+/* @media (min-width: 480px) and (max-width: 659px) {
+    .clients-details__company {
+        margin-bottom: 50px;
+    } */
 
 .clients-details__image {
     float: left;
@@ -326,6 +478,13 @@ main .about-us {
     border: 1px solid #AFB1B8;
 }
 
+@media (min-width: 340px) and (max-width: 767px) {
+    .clients-details__image {
+        width: 210px;
+        margin: 15px;
+    }
+}
+
 .clients-details__image:hover {
     border: 1px solid #2196F3;
 }
@@ -334,6 +493,12 @@ main .about-us {
     width: 106px;
     height: 60px;
     margin: 16px 32px;
+}
+
+@media (min-width: 340px) and (max-width: 659px) {
+    .clients-details__image .logo {
+        margin: 16px auto;
+    }
 }
 
 .clients-details__image .logo.YA_CO {

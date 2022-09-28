@@ -8,11 +8,11 @@ header {
 
 .catalog {
     display: flex;
-    padding-top: 48px;
     letter-spacing: 0.03em;
     flex-wrap: wrap;
-    padding-bottom: 62px;
     justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 62px;
 }
 
 /* ------catalog-filters------ */
@@ -31,11 +31,7 @@ header {
     border-radius: 4px;
 }
 
-.catalog-filters__link.all,
-.catalog-filters__link.web, 
-.catalog-filters__link.apps,
-.catalog-filters__link.design,
-.catalog-filters__link.marketing {
+.catalog-filters__link.active {
     background-color: #2196F3;
     color: #FFFFFF;
 }
@@ -47,8 +43,7 @@ header {
 
 /* ------catalog-item------ */
 
-.navigation__item.home,
-.navigation__item.portfolio {
+.navigation__item.active {
     padding-bottom: 28px;
     border-bottom: 4px solid #2196F3;
     border-radius: 2px;

@@ -1,0 +1,367 @@
+@media (min-width: 340px) and (max-width: 479px) {
+
+    .banner {
+        height: 400px;
+    }
+
+    .banner__title {
+        padding-top: 118px;
+    }
+
+    .banner__button.container {
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        padding: 10px 24px;
+    }
+
+    .banner__form-container {
+        max-width: 450px;
+        max-height: 609px;
+    }
+
+    .cancel {
+        margin-left: 372px;
+    }
+
+    .banner__open-btn button.btn {
+        margin: 31px 85px;
+    }
+
+    .banner__open-btn input,
+    .banner__open-btn textarea {
+        border-radius: 4px;
+        width: 370px;
+        padding: 12.5px;
+        margin: 4px 0 10px 0;
+        border: 1px solid #21212133;
+    }
+
+    .about-us__benefit {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly
+    }
+
+    .about-us__benefit-feature {
+        width: 100%;
+        float: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-us__benefit-item {
+        width: 100%;
+    }
+
+    .about-us__benefit-item p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .about-us__benefit-title {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .about-us__details.title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33px;
+    }
+
+    .about-us__details-image {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-us__details-item {
+        margin-top: 10px;
+    }
+
+    .team__title {
+        padding-top: 24px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33px;
+    }
+
+    .team-item__member {
+        margin: 30px 0 0;
+    }
+
+    /* .team-item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 60px;
+    } */
+
+    .clients-details__image {
+        width: 210px;
+        margin-bottom: 30px;
+    }
+
+    .clients-details__image .logo {
+        margin: 16px auto;
+    }
+
+    .clients-details__company {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 94px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 659px) {
+
+    .banner {
+        height: 400px;
+    }
+
+    .banner__title {
+        padding-top: 118px;
+    }
+
+    .banner__button.container {
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        padding: 10px 24px;
+    }
+
+    .banner__form-container {
+        max-width: 450px;
+        max-height: 609px;
+    }
+
+    .cancel {
+        margin-left: 372px;
+    }
+
+    .banner__open-btn button.btn {
+        margin: 31px 85px;
+    }
+
+    .banner__open-btn input,
+    .banner__open-btn textarea {
+        border-radius: 4px;
+        width: 370px;
+        padding: 12.5px;
+        margin: 4px 0 10px 0;
+        border: 1px solid #21212133;
+    }
+
+    .about-us__benefit {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-us__benefit-feature {
+        width: 100%;
+        float: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-us__benefit-item p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .about-us__benefit-title {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .about-us__details.title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33px;
+    }
+
+    .about-us__details-image {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-us__details-item {
+        margin-top: 10px;
+    }
+
+    .team__title {
+        padding-top: 24px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33px;
+    }
+
+    .team-item__member {
+        margin: 30px 0 0;
+    }
+
+    .clients-details__image {
+        width: 210px;
+        margin-bottom: 30px;
+    }
+
+    .clients-details__image .logo {
+        margin: 16px auto;
+    }
+
+    .clients-details__company {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 340px) and (max-width: 599px) {
+
+    .about-us__benefit {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly
+    }
+
+    .about-us__benefit-feature {
+        width: 100%;
+        float: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-us__benefit {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly
+    }
+
+    .about-us__benefit-feature {
+        width: 100%;
+        float: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-us__benefit-item {
+        width: 100%;
+    }
+
+    .about-us__benefit-item p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .about-us__benefit-title {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .about-us__details.title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33px;
+    }
+
+    .about-us__details-image {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-us__details-item {
+        margin-top: 10px;
+    }
+
+}
+
+@media (min-width: 340px) and (max-width: 699px) {
+    .team-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 60px;
+        flex-direction: column;
+    }
+
+    .team-item__member {
+        margin-bottom: 30px;
+    }
+
+    .team-item__member {
+        margin: 30px 0 0;
+    }
+
+    .about-us__benefit-title {
+        text-align: center;
+        font-weight: 700;
+    }
+}
+
+
+@media (min-width: 700px) and (max-width: 767px) {
+    .team-item {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .team-item__member {
+        margin: 30px 0 0;
+    }
+}
+
+
+
+
+@media (min-width: 480px) and (max-width: 659px) {
+
+    h2 {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:767px) {
+
+    h1 {
+        font-family: 'Roboto';
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 42px;
+        letter-spacing: 0.06em;
+    }
+
+    h2 {
+        margin-top: 60px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+}
