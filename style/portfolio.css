@@ -10,9 +10,24 @@ header {
     display: flex;
     letter-spacing: 0.03em;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 48px;
     padding-bottom: 62px;
+}
+
+@media (min-width: 340px) and (max-width: 767px) {
+    .catalog {  
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .catalog {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(354px, 1fr));
+        grid-gap: 2vw;
+        justify-items: center;
+    }
 }
 
 /* ------catalog-filters------ */
@@ -21,6 +36,7 @@ header {
     display: flex;
     margin-top: 94px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .catalog-filters a {
@@ -30,6 +46,16 @@ header {
     color: #212121;
     border-radius: 4px;
 }
+
+@media (min-width: 340px) and (max-width: 767px) {
+    .catalog-filters a {
+        padding: 10px 22px;
+        margin: 8px 4px;
+        background-color: #F5F4FA;
+        color: #212121;
+        border-radius: 4px;
+        }
+    }
 
 .catalog-filters__link.active {
     background-color: #2196F3;
@@ -55,6 +81,12 @@ header {
     height: 404px;
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .catalog-item {
+        width: 354px;
+    }
 }
 
 .catalog-item:hover {
@@ -83,6 +115,12 @@ header {
     width: 370px;
     height: 294px; 
     background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .catalog-item__goods {
+        width: 354px;
+    }
 }
 
 .catalog-item a .catalog-item__goods.notebook  {

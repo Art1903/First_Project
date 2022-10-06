@@ -36,6 +36,23 @@ header {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+    .header__body {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 80px;
+        grid-template-areas: "logo menu";
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .header__menu {
+        grid-area: menu;
+    }
+}
+
 @media (min-width: 340px) and (max-width: 767px) {
     .header__burger span {
         width: 30px;
@@ -100,6 +117,30 @@ header {
     }
 }
 
+.header__social {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .header__menu {
+        display: grid;
+        grid-template-columns: 1fr 170px;
+        grid-template-rows: 80px;
+        grid-template-areas: "navigation contact";
+        justify-items: stretch;
+    }
+
+         .navigation {
+             grid-area: navigation;
+         }
+    
+         .contact {
+             grid-area: contact;
+         }
+}
+
+
 @media (min-width: 340px) and (max-width: 767px) {
     .header__social {
         display: flex;
@@ -141,7 +182,6 @@ header {
 
 /* --------Logo---------- */
 
-
 .logo {
     float: left;
     margin-top: 24px;
@@ -153,6 +193,12 @@ header {
         margin-top: 16px;
         float: none;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .logo {
+        margin: 26px 88px 0 0;
+}
 }
 
 .logo p {
@@ -281,6 +327,13 @@ a.navigation__item:hover {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+    .contact {
+        margin-top: 21px;
+    }
+}
+
+
 .contact a {
     float: left;
     text-decoration: none;
@@ -296,6 +349,13 @@ a.navigation__item:hover {
 @media (min-width: 480px) and (max-width: 767px) {
     .contact a {
         font-size: 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .contact a {
+        float: none;
     }
 }
 
@@ -455,6 +515,12 @@ footer {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+    footer {
+        height: 463px;
+    }
+}
+
 /* -----footer_main-info-------- */
 
 footer .container {
@@ -467,6 +533,30 @@ footer .container {
         flex-direction: column;
         align-content: center;
         align-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    footer .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        grid-template-areas:
+            "info social-link"
+            "form form";
+        justify-items: center;
+    }
+
+    .footer__main-info {
+        grid-area: info;
+    }
+
+    .footer__social-link {
+        grid-area: social-link;
+    }
+
+    .footer__subscription {
+        grid-area: form;
     }
 }
 
@@ -548,9 +638,15 @@ footer .social-link {
     margin-top: 72px;
 }
 
-@media (min-width: 340px) and (max-width: 767px) {
+@media (min-width: 340px) and (max-width: 1199px) {
     .footer__social-link p {
-        margin-top: 60px;
+        margin-top: 65px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .footer__social-link p {
+        text-align: center;
     }
 }
 
@@ -590,6 +686,13 @@ footer .social-wrapper .icon.linkedin {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+    .footer__subscription {
+        margin: 30px 0 0 0;
+        text-align: center;
+    }
+}
+
 .footer__subscription p {
     color: #ffffff;
     height: 16px;
@@ -613,6 +716,27 @@ footer .social-wrapper .icon.linkedin {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+    .footer__form.container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        grid-template-areas:
+            "email"
+            "button";
+        justify-items: center;
+        margin: 30px 0 0 0;
+    }
+
+    .footer__form-email {
+        grid-area: email;
+    }
+
+    .subscription__button {
+        grid-area: button;
+    }
+}
+
 .footer__form input {
     padding: 15px;
     font-size: 16px;
@@ -630,10 +754,10 @@ footer .social-wrapper .icon.linkedin {
     margin-right: 12px;
 }
 
-@media (min-width: 340px) and (max-width: 767px) {
+@media (min-width: 340px) and (max-width: 1199px) {
     .footer__form-email {
-        width: 100%;
-        margin: 0 auto;
+        width: 200%;
+        /* margin: 0 auto; */
     }
 }
 
@@ -673,4 +797,3 @@ button .footer__btn {
     background-repeat: no-repeat;
     float: right;
 }
-

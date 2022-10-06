@@ -15,43 +15,60 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Oleo+Script&family=Raleway:wght@400;700&family=Roboto:wght@500&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="style/portfolio.css">
-        <link rel="stylesheet" href="style/global.css">
-        <link rel="stylesheet" href="style/common.css">
+        <link rel="stylesheet" href="/style/portfolio.css">
+        <link rel="stylesheet" href="/style/global.css">
+        <link rel="stylesheet" href="/style/common.css">
+        <meta name="viewport" content="width=device-width initial-scale=1, maximum-scale=1">
         <title>WebStudio</title>
     </head>
 
     <body>
-        <header class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <p><span>Web</span>Studio</p>
-                </a>
-            </div>
-            <div class="navigation">
-                <a href="index.html" class="navigation__item">Студія</a>
-                <a href="portfolio.html" class="navigation__item active">Портфоліо</a>
-                <a href="#" class="navigation__item">Контакти</a>
-            </div>
-            <div class="contact">
-                <a href="mailto:info@devstudio.com">
-                    <div class="contact__info letter"></div>
-                    info@devstudio.com
-                </a>
-                <a href="tel:+380961111111">
-                    <div class="contact__info tel"></div>
-                    +38 096 111 11 11
-                </a>
-            </div>
+        <header>
+            <div class="container">
+                <div class="header__body">
+                    <div class="logo">
+                        <a href="index.html">
+                            <p><span>Web</span>Studio</p>
+                        </a>
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="header__menu">
+                        <div class="navigation">
+                            <a href="/pages/home/index.html" class="navigation__item">Студія</a>
+                            <a href="/pages/portfolio/portfolio.html" class="navigation__item active">Портфоліо</a>
+                            <a href="#" class="navigation__item">Контакти</a>
+                        </div>
+                        <div class="contact">
+                            <a href="mailto:info@devstudio.com">
+                                <div class="contact__info letter"></div>
+                                info@devstudio.com
+                            </a>
+                            <a href="tel:+380961111111">
+                                <div class="contact__info tel"></div>
+                                +38 096 111 11 11
+                            </a>
+                        </div>
+                        <div class="header__social">
+                            <a class="header__social-link" href="#">Instagram</a>
+                            <a class="header__social-link" href="#">Twitter</a>
+                            <a class="header__social-link" href="#">Facebook</a>
+                            <a class="header__social-link" href="#">Linkedin</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <main class="container">
             <div class="catalog-filters">
-                <a class="catalog-filters__link" href="portfolio.html">Усі</a>
-                <a class="catalog-filters__link" href="portfolio_web.html">Веб-сайти</a>
-                <a class="catalog-filters__link" href="portfolio_apps.html">Додатки</a>
-                <a class="catalog-filters__link active" href="portfolio_design.html">Дизайн</a>
-                <a class="catalog-filters__link" href="portfolio_marketing.html">Маркетинг</a>
+            <a class="catalog-filters__link" href="/pages/portfolio/portfolio.html">Усі</a>
+            <a class="catalog-filters__link" href="/pages/portfolio/portfolio_web.html">Веб-сайти</a>
+            <a class="catalog-filters__link" href="/pages/portfolio/portfolio_apps.html">Додатки</a>
+            <a class="catalog-filters__link active" href="/pages/portfolio/portfolio_design.html">Дизайн</a>
+            <a class="catalog-filters__link" href="/pages/portfolio/portfolio_marketing.html">Маркетинг</a>
             </div>
             <div class="catalog">
                 <div class="catalog-item">
@@ -114,6 +131,6 @@
             </div>
             </div>
         </footer>
+<script src="js/script.js"></script>
     </body>
-
 </html>
